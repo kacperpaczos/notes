@@ -1,0 +1,19 @@
+Najbardziej podstawowa jednostka to obiekt (object). Może on reprezentować cokolwiek zechce.
+
+Obiekty mogą zostać przyporządkowane (mapped) jedne drugim lub też między sobą. 
+Jeśli jeden obiekt idzie do drugiego, nazywa się to morfizmem (morphism).
+Jeśli obiekt idzie sam od siebie, nazywa się to endomorfizmem (endomorphism).
+
+Zbiór jakoś przyporzadkowanych obietków nazywa się kategroią.
+
+Między kategoriami, przemiany jedną w drugą, działają funktory (functors). 
+Funktory nie tylko zmieniają obiekt w jednej kategorii w drugiej kategorii, ale także:
+- zachowują morfizmy między obiektami
+- zachowują kompozycję morfizmów
+- zachowują morfizmy tożsamościowe
+- ogólnie zachowują strukturę relacji między obiektami przy przejściu między kategoriami
+
+Są to warunki prawiðłowego funktora, określane że kategora musi być preserved.
+
+
+Endofunktor?
