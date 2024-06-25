@@ -38,6 +38,8 @@ Paradygmat programowania, który opiera się na procedurach, czyli podprogramach
 6. **Funkcje** - grupują instrukcje w celu ich wielokrotnego użycia.
 
 Paradygmat procesduralny jest podtypem paradygmatu imperatywnego.
+
+**Tu po prostu jest funkcja, która coś robi** Impreatywne są python i bash (linia po linii), a procecduralne, kiedy pojawiają sie funkcje.
 ```cpp
 #include <iostream>
 #include <vector>
