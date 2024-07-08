@@ -1,3 +1,6 @@
+Monada to typ danych z operatorem "no a potem".
+A Monad is a type with an "and then" operator.
+
 Najbardziej podstawowa jednostka to obiekt (object). Może on reprezentować cokolwiek zechce.
 
 Obiekty mogą zostać przyporządkowane (mapped) jedne drugim lub też między sobą. 
