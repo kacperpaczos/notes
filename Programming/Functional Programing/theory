@@ -1,0 +1,9 @@
+W programownaiu funkcyjnym, kod też jest danymi.
+w zwykłym programowaniu, funckje sa czym innym od danych, czym specjalnym
+
+Kiedy w normalnie bierzemy int x = 5; to te 5 to nasze dane;
+wprogramownaiu funkcjnym pod zmienną może kryść sie cąła funkcja, byc traktownaa jako typ daych.
+
+W impreatywnym programownaiu, lista wyników funckji, może być zastapiona (w pewnym zakresie) tabelą/lista wartości z uwgai na performence. (Hard coding)
+
+
