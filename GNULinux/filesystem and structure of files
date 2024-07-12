@@ -25,6 +25,7 @@ Każdy plik i katalog w systemie plików Linux ma przypisany unikalny numer i-no
 
 4. Polecenia związane z i-node:
    - ls -i: wyświetla numery i-node'ów
+   - ls -li pokazuje numery i-node wraz z nazwami plików
    - stat: pokazuje szczegółowe informacje o i-node
    - df -i: sprawdza wykorzystanie i-node'ów w systemie plików
 
