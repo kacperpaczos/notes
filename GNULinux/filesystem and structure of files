@@ -1,0 +1,31 @@
+I-node (węzeł indeksowy) w systemie Linux to struktura danych, która przechowuje metadane o pliku lub katalogu.
+Każdy plik i katalog w systemie plików Linux ma przypisany unikalny numer i-node. 
+
+1. Zawartość i-node:
+   - Prawa dostępu do pliku
+   - Właściciel i grupa
+   - Rozmiar pliku
+   - Znaczniki czasu (utworzenia, modyfikacji, dostępu)
+   - Liczba dowiązań twardych
+   - Wskaźniki do bloków danych na dysku
+
+2. Cechy i-node:
+   - Unikalny numer w ramach systemu plików
+   - Nie przechowuje nazwy pliku (nazwa jest przechowywana w katalogu)
+        - Katalog to specjalny rodzaj pliku, który zawiera listę wpisów
+        - Każdy wpis w katalogu łączy nazwę pliku z odpowiadającym mu numerem i-node
+        - Katalog zawiera pary: (nazwa pliku, numer i-node)
+        - Dzięki temu jeden i-node może być powiązany z wieloma nazwami plików (dowiązania twarde)
+   - Ograniczona liczba i-node'ów w systemie plików
+
+3. Zastosowanie:
+   - Szybki dostęp do metadanych pliku
+   - Efektywne zarządzanie przestrzenią dyskową
+   - Umożliwia tworzenie dowiązań twardych
+
+4. Polecenia związane z i-node:
+   - ls -i: wyświetla numery i-node'ów
+   - stat: pokazuje szczegółowe informacje o i-node
+   - df -i: sprawdza wykorzystanie i-node'ów w systemie plików
+
+I-node'y są kluczowym elementem systemu plików w Linuxie, zapewniającym efektywne zarządzanie plikami i katalogami.
