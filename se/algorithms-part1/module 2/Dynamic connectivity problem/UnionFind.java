@@ -44,7 +44,11 @@ public class UnionFind {
 
     // sprawdza czy dwa elementy są połączone
     public boolean isConnected(int p, int q){
-        return parent[p] == parent[q];
+        return find(p) == find(q);
     }
     
+    // zwraca liczbę rozłącznych zbiorów
+    public int getCount() {
+        return count;
+    }
 }
