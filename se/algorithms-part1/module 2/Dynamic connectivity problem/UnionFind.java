@@ -36,10 +36,10 @@ public class UnionFind {
 
     // znajduje reprezentnta dla danego elementu
     public int find(int p) {
-        if (p == parent[p]) {
-            return p;
-        }        
-        return find(parent[p]);
+        if (p != parent[p]) {
+            parent[p] = find(parent[p]);  // kompresja ścieżki
+        }
+        return parent[p];
     }
 
     // sprawdza czy dwa elementy są połączone
