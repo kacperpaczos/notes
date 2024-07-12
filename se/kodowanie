@@ -1,0 +1,59 @@
+# Kodowanie informacji w komputerze
+
+## Podstawy systemów liczbowych
+
+Informacje w komputerze są kodowane w postaci liczb. Liczby zapisujemy za pomocą cyfr w systemach liczbowych pozycyjnych.
+
+W systemie pozycyjnym, każda cyfra ma określoną wartość zależną od jej pozycji. Wartość ta nazywana jest wagą pozycji i jest potęgą podstawy systemu liczbowego.
+
+### Popularne systemy pozycyjne:
+
+- **Binarny (dwójkowy)**: podstawa 2, cyfry 0-1
+- **Oktalny (ósemkowy)**: podstawa 8, cyfry 0-7
+- **Heksadecymalny (szesnastkowy)**: podstawa 16, cyfry 0-9 i A-F
+- **Decymalny (dziesiętny)**: podstawa 10, cyfry 0-9
+
+### Mniej popularne systemy pozycyjne:
+
+- **Ternarny (trójkowy)**: podstawa 3, cyfry 0-2
+- **Kwartalny (czwórkowy)**: podstawa 4, cyfry 0-3
+- **Duodecymalny (dwunastkowy)**: podstawa 12, cyfry 0-9 i A-B
+
+## Kodowanie danych
+
+Kod w danym systemie liczbowym to metoda reprezentacji danych za pomocą symboli właściwych dla tego systemu.
+
+### Przykłady kodowania liczby 15 (dziesiętnie):
+
+- Kod binarny (NKB): `1111`
+- Kod BCD: `0001 0101`
+- Kod ASCII (dla znaku '1'): `0110001`
+- Kod Gray'a: `1000`
+
+> Warto pamiętać, że w komputerze wszystkie dane, włącznie ze znakami, są ostatecznie reprezentowane jako wartości liczbowe.
+
+## Przechowywanie danych
+
+Wartości liczbowe reprezentujące cyfry, znaki i inne dowolne dane:
+* są przechowywane w pamięci komputera RAM
+* lub trwale na dysku
+
+### Bity i bajty
+
+- Dane w komputerze zapisywane są w **bitach**. Bit reprezentuje 1 albo 0.
+- Bity grupowane są w **bajty**, aby mogły przechowywać konkretne wartości.
+- Bajt ma zawsze 8 bitów.
+
+Dane są pobierane z pamięci według długości słowa; po 2, 4 lub więcej bajtów. Zależy to od architektury.
+
+## Charakterystyka systemu pozycyjnego
+
+1. System pozycyjny charakteryzuje liczba zwana **podstawą systemu pozycyjnego**.
+2. Do zapisu liczby służą **cyfry**.
+3. Cyfr jest zawsze tyle, ile wynosi podstawa systemu: 0,1,2,...,(p-1)
+4. Cyfry ustawiamy na kolejnych pozycjach.
+5. Pozycje numerujemy od 0, poczynając od strony prawej zapisu.
+6. Każda pozycja posiada swoją **wagę**.
+7. Waga jest równa podstawie systemu podniesionej do potęgi o wartości numeru pozycji.
+8. Cyfry określają ile razy waga danej pozycji uczestniczy w wartości liczby.
+9. Wartość liczby obliczamy sumując iloczyny cyfr przez wagi ich pozycji.
