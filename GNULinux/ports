@@ -1,0 +1,2 @@
+W systemie GNU/Linux nie można uzywaćportu 1024 i niżej jeśli nie mamy praw administratora;
+Porty te są zarezerwowane dla usług systemowych.
