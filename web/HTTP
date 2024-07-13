@@ -1,0 +1,108 @@
+Protokół HTTP (ang. Hypertext Transfer Protocol) to zasady wymiany informacji i współpracy programów.
+Programami są serwery i klienty. Programy te wysyłają żądania (requests) lub odpowiedzi (response).
+
+HTTP pobiera jeden zasób, jesli jest on za długi, serwer może zdecydować się na segmentacje:
+Algorytmy segmentacji na poziomie serwera/aplikacji:
+
+* Stała wielkość segmentów: Zasób jest dzielony na segmenty o ustalonej wielkości (np. 1 MB).
+* Segmentacja oparta na zawartości: Zasób jest dzielony w miejscach, gdzie występują naturalne granice (np. granice klatek wideo).
+* Segmentacja adaptacyjna: Wielkość segmentów jest dostosowywana dynamicznie w zależności od warunków sieciowych i możliwości klienta.
+
+Mechanizmy HTTP związane z segmentacją:
+
+* Nagłówek Content-Length: Informuje klienta o całkowitym rozmiarze zasobu, co pozwala mu określić, czy zasób jest duży i czy warto go segmentować.
+* Nagłówek Accept-Ranges: Wskazuje, czy serwer obsługuje żądania zakresów (Range Requests).
+* Żądania zakresów (Range Requests): Klient może zażądać określonego fragmentu zasobu, podając zakres bajtów w nagłówku Range.
+* Odpowiedzi częściowe (Partial Responses): Serwer może odpowiedzieć kodem statusu 206 Partial Content i dostarczyć tylko żądany fragment zasobu.
+
+Dodatkowe mechanizmy:
+
+* Range Requests: Klient może zażądać tylko określonego fragmentu zasobu (np. bajty od 1000 do 2000). Pozwala to na pobieranie dużych zasobów w kawałkach lub wznawianie przerwanego pobierania.
+* Streaming: Niektóre rodzaje zasobów (np. wideo) mogą być przesyłane strumieniowo, co oznacza, że klient może zacząć odtwarzać zasób jeszcze przed jego całkowitym pobraniem.
+
+
+Protokół HTTP jest bezstanowy. Oznacza to tyle, że każde zapytanie może być interpretowane w oderwaniu od pozostałych.
+
+URL(ang. Uniform Resource Locator) są podzbiorem URI. URI można traktować jako zbiór znaków który pozwala na unikalną identyfikację zasobu. 
+URL natomiast poza tym unikalnym identyfikatorem zawiera informację dotyczącą “położenia” danego zasobu.
+
+Adres URL ma postać
+scheme:[//[user[:password]@]host[:port]][/path][?query][#fragment]
+Przykładowy adres URL może wyglądać następująco
+http://marcin:tajne@www.samouczekprogramisty.pl:80/nie/ma/tej?strony=1#identyfikator
+
+-------
+| Część adresu | Przykładowa wartość | Wyjaśnienie |
+|---|---|---|
+| **scheme** | http | Określa protokół używany do komunikacji z serwerem. Najczęściej spotykane to: <br> - http (niezabezpieczony) <br> - https (zabezpieczony) |
+| **user** | marcin | Nazwa użytkownika wymagana do uzyskania dostępu do zasobu (rzadko używana w standardowych adresach URL) |
+| **password** | tajne | Hasło użytkownika wymagane do uzyskania dostępu do zasobu (rzadko używane w standardowych adresach URL) |
+| **host** | www.samouczekprogramisty.pl | Nazwa domeny lub adres IP serwera, na którym znajduje się zasób. |
+| **port** | 80 | Numer portu, przez który nawiązywane jest połączenie z serwerem. Dla http domyślnie jest to port 80, a dla https port 443. Zwykle pomijany w adresie, jeśli używane są wartości domyślne. |
+| **path** | /nie/ma/tej | Ścieżka do konkretnego zasobu (pliku, strony) na serwerze. |
+| **query** | ?strony=1 | Parametry przekazywane do serwera, zwykle używane do filtrowania lub sortowania wyników. Zaczynają się od znaku "?". Poszczególne parametry są oddzielone znakiem "&". |
+| **fragment** | #identyfikator | Identyfikator fragmentu dokumentu, do którego ma nastąpić przekierowanie po załadowaniu strony. Zaczyna się od znaku "#". |
+
+**Dodatkowe uwagi:**
+
+* Poszczególne części adresu URL są oddzielane od siebie specjalnymi znakami, np. dwukropkiem (":"), ukośnikiem ("/"), znakiem zapytania ("?"), znakiem kratki ("#").
+* Nie wszystkie części adresu URL muszą być obecne. Najczęściej spotykane są adresy w postaci: `scheme://host/path`
+* Adres URL jest unikalnym identyfikatorem zasobu w sieci.
+
+
+---------------------------------
+
+Żądanie HTTPP
+Klient wysyła żądanie do serwera w formie wiadomości. Wiadomość ta ma dokładnie zdefiniowany format:
+
+* linia określająca czasownik HTTP, zasób i wersję protokołu,
+* linie zawierające nagłówki,
+* pustą linię określającą koniec nagłówków,
+* ciało wiadomości (jeśli istnieje).
+
+$ curl -v https://api.github.com/users/kbl
+// ciach usunąłem część związaną z HTTPS
+> GET /users/kbl HTTP/1.1
+> Host: api.github.com
+> User-Agent: curl/7.52.1
+> Accept: */*
+>
+
+
+Bezpieczny: Czasownik jest bezpieczny, jeśli jego użycie nie powoduje zmian stanu zasobu na serwerze.
+Idempotentny: Czasownik jest idempotentny, jeśli wielokrotne jego wywołanie z tymi samymi parametrami daje ten sam efekt, co pojedyncze wywołanie.
+
+Bezpieczne czasowniki HTTP:
+
+GET
+HEAD
+OPTIONS
+Idempotentne czasowniki HTTP:
+
+GET
+HEAD
+PUT
+DELETE
+OPTIONS
+
+
+-------------------
+Sesje
+
+Identyfikator sesji (Session ID): Kiedy użytkownik po raz pierwszy odwiedza stronę internetową, serwer generuje unikalny identyfikator sesji (Session ID). Ten identyfikator jest zazwyczaj losowym ciągiem znaków.
+
+Ważniejsze Statusy HTTP:
+200 OK – zapytanie zostało przetworzone poprawnie,
+201 Created – zapytanie zostało przetworzone poprawnie i zasób został utworzony,
+202 Accepted – zapytanie zostało przyjęte przez serwer, jednak jego przetwarzanie nie jest jeszcze ukończone,
+204 No Content – zapytanie zostało przetworzone, ciało wiadomości jest puste.   
+
+301 Moved Permanently – informuje klienta, że zasób został przeniesiony na stałe w inne miejsce.
+
+400 Bad Request – serwer informuje klienta o błędnym zapytaniu, które nie będzie przetworzone,
+403 Forbidden – zasób wymaga uwierzytelnienia, po potwierdzeniu tożsamości może być dostępny,
+404 Not Found – to pewnie znasz i widziałeś wielokrotnie, żądany zasób nie istnieje.
+
+500 Internal Server Error – informacja dla klienta o tym, że serwer znalazł się w stanie, który uniemożliwia poprawne przetworzenie żądania,
+502 Bad Gateway – na początku artykułu wspomniałem o tym, że może być wiele węzłów, które będą przekazywały zapytanie do serwera, który je finalnie obsłuży. Ten status informuje klienta o tym, że jeden z tych pośrednich węzłów dostał błędną odpowiedź od poprzedniego węzła,
+503 Service Unavailable – ten błąd może informować klienta o tym, że serwer jest przeciążony. Ponowna próba może kończyć się poprawną odpowiedzią.
