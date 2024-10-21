@@ -26,3 +26,5 @@ function przetworzDane($dane) {
     return $wynik;
 }
 ```
+
+The “return early” pattern, also known as “fail fast” or “bail out early” is a coding practice where a function exits as soon as a certain condition is not met, rather than allowing the code to continue executing. In short, instead of wrapping the entire function logic in nested if-else structures, this pattern involves checking for conditions that would lead to failure or undesired outcomes and immediately returning from the function.
