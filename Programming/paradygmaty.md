@@ -233,7 +233,10 @@ int main() {
     return 0;
 }
 ```
-Funkcjonalny - paradygmat programowania, który traktuje obliczenia jako ewaluację funkcji matematycznych i unika zmiennych stanów oraz efektów ubocznych. Kładzie nacisk na niemutowalność danych, co oznacza, że raz utworzone struktury danych nie powinny być modyfikowane.
+
+### Funkcyjne
+
+Paradygmat programowania, który traktuje obliczenia jako ewaluację funkcji matematycznych i unika zmiennych stanów oraz efektów ubocznych. Kładzie nacisk na niemutowalność danych, co oznacza, że raz utworzone struktury danych nie powinny być modyfikowane.
 
 #### Elementy i zasady w języku C++23:
 1. **Funkcje wyższego rzędu** - funkcje, które mogą przyjmować inne funkcje jako argumenty lub zwracać funkcje jako wyniki (`std::function`). Umożliwiają one implementację technik takich jak currying, czyli częściowe aplikowanie funkcji.
