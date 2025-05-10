@@ -7,3 +7,8 @@ wprogramownaiu funkcjnym pod zmienną może kryść sie cąła funkcja, byc trak
 W impreatywnym programownaiu, lista wyników funckji, może być zastapiona (w pewnym zakresie) tabelą/lista wartości z uwgai na performence. (Hard coding)
 
 
+
+Funkcje czystre
+* determinizm
+* brak efketów ubocznych
+
