@@ -1,0 +1,1 @@
+funckaj bez else,jesli w  nic nie wpadanie, zwraca None, a czasem warto to kontroloać, na przykład w if else mając [] na nieprzewidziane przypadki
