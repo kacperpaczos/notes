@@ -1,0 +1,24 @@
+ES5
+Zmienne zawsze są wynoszone na góre zakresu, wartość jest przypisywana póżniej.
+
+Funckje są wynoszone na górę zakresu, także, ale z nich mozna skorzystać od razu (zwracają wartość).
+
+ES6
+
+W nowoczesnym JavaScript (ES6+) mamy trzy rodzaje zakresów:
+* Zakres globalny (obiekt window, w przypadku przeglądarki): Zmienne zadeklarowane poza jakąkolwiek funkcją lub blokiem mają zasięg globalny. Są one dostępne z dowolnego miejsca w kodzie.
+* Zakres funkcyjny: Zmienne zadeklarowane wewnątrz funkcji mają zasięg funkcyjny. Są one dostępne tylko wewnątrz tej funkcji.
+* Zakres blokowy: Zmienne zadeklarowane wewnątrz bloku kodu (np. wewnątrz instrukcji if, for, while lub w bloku ograniczonym nawiasami klamrowymi {}) mają zasięg blokowy.
+
+------------------------------------------------------------------------
+
+Hoisting is often considered a feature of var declarations as well, although in a different way. In colloquial terms, any of the following behaviors may be regarded as hoisting:
+
+* Being able to use a variable's value in its scope before the line it is declared. ("Value hoisting")
+* Being able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError, but the value is always undefined. ("Declaration hoisting")
+* The declaration of the variable causes behavior changes in its scope before the line in which it is declared.
+* The side effects of a declaration are produced before evaluating the rest of the code that contains it.
+
+The four function declarations above are hoisted with type 1 behavior; var declaration is hoisted with type 2 behavior; let, const, and class declarations (also collectively called lexical declarations) are hoisted with type 3 behavior; import declarations are hoisted with type 1 and type 4 behavior.
+
+

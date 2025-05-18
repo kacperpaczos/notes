@@ -1,5 +1,0 @@
-własne klasy wyjatków, róznica między zwróceniem klasy a kontruktora, zwracanie stringa, z opisem błedu lub kodem.
-
-własne podklasy exception
-
-Exception zeby nie wchłaniać keyboard interrption

@@ -1,9 +1,0 @@
-Template literals w JavaScript, oznaczane za pomocą backticków (`), pozwalają na łatwiejsze wstawianie zmiennych 
-i wyrażeń w tekście. Użycie ${} w środku template literal umożliwia dynamiczne wyliczanie wartości 
-i wstawianie ich do ciągu znaków.
-
-console.log(`Try programiz.pro${100/2}`);
-
-$: symbol wprowadza wyrażenie
-{}: nawiasy klamrowe otaczają wyrażenie, które ma być wyliczone.
-Backticków (`): otaczają cały ciąg znaków, definiując template literal.

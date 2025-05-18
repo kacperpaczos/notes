@@ -1,0 +1,2 @@
+Używa flatMap do spłaszczenia RDD (każdy element staje się osobnym elementem)
+

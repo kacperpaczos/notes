@@ -1,0 +1,24 @@
+The array (tablica) is one of the most basic data structures in computer science. 
+
+Tablica jest po prostu blokiem pamięci.
+Zwykła zmienna przechowuje jedną informację, natomiast tablica przechowuje wiele wartości (array stores multiple values).
+Tablica zajmuje ciągłe miejsce w pamięci (contiguous memory allocation), a dostęp do elementów tablicy mamy za pomocą indeksu (index-based access).
+
+Tablica jest liniową strukturą danych (linear data structure); jest uporządkowana według kolejności (ordered); ma stały rozmiar (fixed size); wszystkie elementy tablicy są tego samego typu, co nazywamy jednorodnością (homogeneity).
+
+Kluczowe cechy tablicy:
+1. Przechowywanie wielu wartości (multiple value storage)
+2. Ciągła alokacja pamięci (contiguous memory allocation)
+3. Dostęp przez indeks (index-based access)
+4. Liniowość (linearity)
+5. Uporządkowanie (order)
+6. Stały rozmiar (fixed size)
+7. Jednorodność (homogeneity)
+
+Dlaczego indeks w tablicy zaczyna się od zera?
+
+W większości języków programowania indeksowanie tablicy zaczyna się od zera. Jest to związane z kilkoma czynnikami:
+
+1. Efektywność obliczeniowa:
+   - Indeks zero odpowiada przesunięciu (offset) od początku tablicy.
+   - Obliczanie adresu pamięci elementu jest prostsze: adres = adres_bazowy + (indeks * rozmiar_elementu).

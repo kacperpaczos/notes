@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    // 1. Konkatenacja (łączenie)
+    string a = "Hello";
+    string b = "World";
+    string c = a + " " + b;
+    cout << "1. Konkatenacja: " << c << endl;
+
+    // 2. Dostęp do pojedynczych znaków
+    char firstChar = c[0];
+    cout << "2. Pierwszy znak: " << firstChar << endl;
+
+    // 3. Długość stringa
+    int length = c.length();
+    cout << "3. Długość stringa: " << length << endl;
+
+    // 4. Podstring
+    string sub = c.substr(0, 5);
+    cout << "4. Podstring: " << sub << endl;
+
+    // 5. Wyszukiwanie
+    size_t pos = c.find("World");
+    cout << "5. Pozycja 'World': " << pos << endl;
+
+    // 6. Zamiana
+    string d = c;
+    d.replace(0, 5, "Hi");
+    cout << "6. Po zamianie: " << d << endl;
+
+    // 7. Wstawianie
+    string e = "Hello";
+    e.insert(5, " there");
+    cout << "7. Po wstawieniu: " << e << endl;
+
+    // 8. Usuwanie
+    string f = "Hello there World";
+    f.erase(5, 6);
+    cout << "8. Po usunięciu: " << f << endl;
+
+    // 9. Porównywanie
+    bool isEqual = (a == b);
+    cout << "9. Czy 'Hello' == 'World': " << (isEqual ? "tak" : "nie") << endl;
+
+    // 10. Konwersja na inne typy
+    string numStr = "123";
+    int num = stoi(numStr);
+    cout << "10. Konwersja '123' na int: " << num << endl;
+
+    // Bonus: Odwracanie stringa
+    string g = "Hello";
+    reverse(g.begin(), g.end());
+    cout << "Bonus: Odwrócony string: " << g << endl;
+
+    return 0;
+}

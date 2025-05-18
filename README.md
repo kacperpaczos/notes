@@ -40,3 +40,73 @@ Feel free to submit pull requests to improve or extend these notes. Please keep 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Indeks Notatek Programistycznych
+
+To repozytorium zawiera kompleksowy zbiór notatek na różne tematy związane z programowaniem i informatyką. Notatki są zorganizowane tematycznie i obejmują szeroki zakres zagadnień.
+
+## Struktura Repozytorium
+
+- [01-cs-fundamentals](01-cs-fundamentals/) - Podstawy informatyki
+  - Algorytmy
+  - Struktury danych
+  - Teoria obliczeń
+
+- [02-programming](02-programming/) - Programowanie
+  - Paradygmaty programowania
+  - Koncepcje programistyczne
+  - Zasady projektowania
+
+- [03-design-patterns](03-design-patterns/) - Wzorce projektowe
+  - Wzorce kreacyjne
+  - Wzorce strukturalne
+  - Wzorce behawioralne
+  - Wzorce architektoniczne
+
+- [04-languages](04-languages/) - Języki programowania
+  - Python
+  - JavaScript
+  - TypeScript
+  - C++
+  - PHP
+
+- [05-web-development](05-web-development/) - Rozwój Aplikacji Webowych
+  - Frontend (React, Vue)
+  - Backend (Node.js)
+  - GraphQL
+
+- [06-databases](06-databases/) - Bazy Danych
+  - SQL
+  - NoSQL
+  - Projektowanie baz danych
+
+- [07-devops](07-devops/) - DevOps
+  - Linux
+  - Serwery
+  - Kontenery
+
+- [08-ai-ml](08-ai-ml/) - Sztuczna inteligencja i machine learning
+  - Machine Learning
+  - Deep Learning
+
+- [09-philosophy](09-philosophy/) - Filozofia
+
+- [10-interview-prep](10-interview-prep/) - Przygotowanie do rozmów kwalifikacyjnych
+  - Wyzwania programistyczne
+  - Projektowanie systemów
+  - Pytania behawioralne
+
+- [resources](resources/) - Zasoby
+  - Książki
+  - Kursy
+  - Narzędzia
+
+## Jak korzystać z tego repozytorium
+
+1. Przejdź do odpowiedniego katalogu tematycznego
+2. Sprawdź plik INDEX.md w danym katalogu, aby zobaczyć dostępne materiały
+3. Postępuj zgodnie z sugerowanymi ścieżkami nauki w pliku [LEARNING_PATHS.md](LEARNING_PATHS.md)
+
+## Formatowanie
+
+Większość notatek jest napisana w formacie Markdown dla łatwego czytania. Niektóre przykłady kodu mogą być dostępne w formacie Jupyter Notebook.

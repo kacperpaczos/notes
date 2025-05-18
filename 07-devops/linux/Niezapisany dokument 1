@@ -1,0 +1,97 @@
+ (grep, awk, sed itp.)
+
+Przejście na Ty.
+
+Uczestnicy: Dawid kierownik
+Michał zastpca
+XX: starszy specjalista.
+
+
+
+Obence dosiwadczenie, co robiłeś
+
+Pytanie o organizacje pracy, jak działa stres, organizacja pracy.
+
+Czego byś nie chciał doświadczyć w pracy.
+
+Wiedza z serwerami
+Lampa
+Dookoła 
+
+Kody 200; 403; 500 w HTTP
+plik htaccess
+
+ls -a
+ls -m - co to 
+
+i-nodes - co to jest i jak działa
+jak sprawdzić zajętośc i-node
+
+jak wyszukiać ciągznaków w plku z logami, grep find
+czy jakiś apkiet jest na serwerze
+
+jak na ps wystawiam
+jak zabić jak resetować
+
+jak
+
+macierze raidowe
+raid1
+
+jak wyswietle status wyjscia ostatniego polecenia; chodzi o exit code. w bashu
+
+w jakiej zmiennji bash trzyma dane programu 
+
+Kwestie administracyjne bazy danych; jak ci idzie.
+Nauka 
+
+
+Serwery pocztowe:
+instalowanie i konfigurowanie
+
+DNS
+
+ping; dig; 
+
+firewalle
+sprawdzenie co gdzie leci: iptables; wyswitlanie wszystkich reguł
+
+w jaki spobob sprawdzic co slucha na porcie 919
+
+
+Wirtualizacja; konteneryzacja;
+
+
+
+LXc
+Docker
+
+LXC
+
+c++
+Co większego pisałeś?
+
+
+pointer
+klasa - nowy typ zmiennych
+
+
+Administraotr system linux dzialnie systemu; procusu; bledoww; dlaczego wystepuje; jak go znaelxc; bledy sprzetowe;
+
+aktualizacja uslug
+
+
+migracje w bazac danych
+
+
+za malo rąk do pracy; za duże srodowisko
+
+nginx; ansbile; bash low level; kontenery lxc
+szybkosc poszukiwania wiedzy
+monitoring
+
+podstawowe narzedzie administratora
+
+
+shebang sh bash
+gdzie sie odoluje

@@ -1,6 +1,0 @@
-Wzorce kreacyjne (Creational Patterns)
-   - [Singleton](Singleton_Pattern.md)
-   - Fabryka (Factory Method)
-   - Fabryka abstrakcyjna (Abstract Factory)
-   - Budowniczy (Builder)
-   - Prototyp (Prototype)

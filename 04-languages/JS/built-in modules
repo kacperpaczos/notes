@@ -1,0 +1,10 @@
+Standaryzacja: ES6 wprowadził wbudowany system modułów, zunifikowany dla Node.js i przeglądarek.
+Sposób definiowania:
+*export const zmienna = ... (nazwany eksport)
+*export default ... (eksport domyślny)
+Sposób importowania:
+*import { zmienna } from './moduł' (nazwany import)
+*import nazwaModulu from './moduł' (import domyślny)
+*import * as nazwaModulu from './moduł' (import wszystkich eksportów jako obiekt)
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export

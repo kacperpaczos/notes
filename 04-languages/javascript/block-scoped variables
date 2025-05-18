@@ -1,0 +1,12 @@
+var nie jest block-scoped variables, jest ona o zakresie globalnym lub funkcjnym
+
+function mojaFunkcja() {
+  var x = 10; // Zmienna x ma zasięg funkcyjny
+  console.log(x); // Wyświetli 10
+}
+
+mojaFunkcja();
+console.log(x); // Błąd! x nie jest zdefiniowane poza funkcją
+
+
+let i var są zmiennymi ktore block-scoped variables, czyli ograniczją sie do bloku {}

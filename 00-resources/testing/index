@@ -1,0 +1,37 @@
+Below is an example list of software testing types with brief descriptions:
+
+1. **Unit Testing**  
+   *Verifies the functionality of the smallest parts of an application, such as individual functions or methods, in isolation.*
+
+2. **Integration Testing**  
+   *Checks that different modules or components work together correctly by testing their interactions.*
+
+3. **System Testing**  
+   *Evaluates the entire system as a whole, ensuring that all requirements and functionalities are met.*
+
+4. **End-to-End (E2E) Testing**  
+   *Simulates real user scenarios by testing the complete workflow of an application—from the user interface, through business logic, to the database or external systems. This helps ensure that all parts of the application work seamlessly together.*
+
+5. **Acceptance Testing**  
+   *Conducted to verify that the system meets the business requirements and expectations of the end users, often performed by QA teams, clients, or end users.*
+
+6. **Regression Testing**  
+   *Ensures that new code changes have not introduced unexpected issues into existing functionality.*
+
+7. **Performance Testing**  
+   *Assesses how the system behaves under specific loads. This includes load testing, stress testing, and scalability testing to ensure optimal performance under varying conditions.*
+
+8. **Security Testing**  
+   *Identifies potential vulnerabilities within the system to prevent unauthorized access and attacks.*
+
+9. **Distributed Testing**  
+   *Focuses on systems with distributed architectures where components may run on different servers or locations. These tests examine:*
+   - *Communication between services*
+   - *Resilience to network issues (such as delays or disconnections)*
+   - *Data consistency across distributed environments*
+   *The goal is to ensure that the system functions correctly even in complex, distributed setups.*
+
+10. **Smoke Testing**  
+    *A quick set of tests performed to verify that the most crucial functions of an application are working correctly before proceeding with more detailed testing.*
+
+This list should help clarify the different testing approaches used in software engineering, especially highlighting what End-to-End (E2E) and Distributed Testing involve.

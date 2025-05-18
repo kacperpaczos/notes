@@ -1,0 +1,11 @@
+Wzorce behawioralne (Behavioral Patterns)
+   - Łańcuch zobowiązań (Chain of Responsibility)
+   - Polecenie (Command)
+   - Iterator
+   - Mediator
+   - Pamiątka (Memento)
+   - Obserwator (Observer)
+   - Stan (State)
+   - Strategia (Strategy)
+   - Metoda szablonowa (Template Method)
+   - Odwiedzający (Visitor)
