@@ -1,112 +1,141 @@
-# Programming and Computer Science Notes
+# Knowledge Repository - Programming & Computer Science
 
-This repository contains a comprehensive collection of notes on various programming and computer science topics. The notes are organized by subject area and cover a wide range of topics from design patterns to algorithms, databases, and web development.
+This repository contains a comprehensive collection of notes on programming, computer science, and related disciplines. It serves as a personal knowledge base covering various technical topics, organized in a structured manner.
 
 ## Repository Structure
 
-The repository is organized into the following main directories:
+- **01-cs-fundamentals** - Computer Science fundamentals
+  - Algorithms and data structures
+  - Computational theory
+  - Mathematical foundations
 
-- **Design Patterns**: Implementation and explanation of design patterns (Creational, Structural, Behavioral)
-- **Programming**: Notes on programming paradigms, concepts, and techniques
-- **SOLID**: Principles of object-oriented design
-- **Databases**: SQL, NoSQL, and database design principles
-- **JS**: JavaScript concepts and techniques
-- **Web**: Web development technologies and frameworks
+- **02-programming** - Programming concepts
+  - Programming paradigms (OOP, Functional, Imperative)
+  - Design principles
+  - Type systems and language concepts
 
-## Key Topics
+- **03-design-patterns** - Design patterns
+  - Creational patterns
+  - Structural patterns
+  - Behavioral patterns
+  - Architectural patterns
+  - SOLID principles
 
-- Design Patterns (Singleton, Factory, Observer, etc.)
-- Object-Oriented Programming concepts
-- Data Structures and Algorithms
-- SQL and database design
-- Frontend frameworks (Vue, React)
-- Component communication in modern applications
-- Interface and abstraction principles
+- **04-languages** - Programming languages
+  - Python
+  - JavaScript/TypeScript
+  - C++
+  - PHP
+
+- **05-web-development** - Web development
+  - Frontend (React, Vue)
+  - Backend technologies
+  - GraphQL
+  - Web security and performance
+
+- **06-databases** - Databases
+  - SQL databases
+  - NoSQL databases
+  - Database design and optimization
+
+- **07-devops** - DevOps
+  - Linux/Unix administration
+  - Containerization (Docker)
+  - CI/CD and deployment
+  - Cloud services
+
+- **08-ai-ml** - AI and Machine Learning
+  - Machine Learning algorithms
+  - Deep Learning
+  - Computer Vision
+  - Natural Language Processing
+
+- **09-philosophy** - Philosophy of technology
+  - Ethics in tech
+  - Logic
+  - Epistemology
+
+- **10-interview-prep** - Interview preparation
+  - Coding challenges
+  - System design
+  - Behavioral questions
 
 ## Usage
 
-These notes are meant to serve as a quick reference and learning resource. They are written in Markdown format for easy reading and can be viewed directly on GitHub or any Markdown viewer.
-
-## Future Plans
-
-- Migrate notes to Jupyter Notebook format for interactive code examples
-- Add more comprehensive examples and visualizations
-- Expand coverage of machine learning and data science topics
-
-## Contributing
-
-Feel free to submit pull requests to improve or extend these notes. Please keep the same format and organization structure.
+These notes are organized primarily for personal reference but may be useful for others studying similar topics. Most content is in Markdown format.
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-# Indeks Notatek Programistycznych
+---
 
-To repozytorium zawiera kompleksowy zbiór notatek na różne tematy związane z programowaniem i informatyką. Notatki są zorganizowane tematycznie i obejmują szeroki zakres zagadnień.
+# Repozytorium Wiedzy - Programowanie i Informatyka
+
+To repozytorium zawiera obszerny zbiór notatek dotyczących programowania, informatyki i pokrewnych dziedzin. Służy jako osobista baza wiedzy obejmująca różne zagadnienia techniczne, zorganizowana w uporządkowany sposób.
 
 ## Struktura Repozytorium
 
-- [01-cs-fundamentals](01-cs-fundamentals/) - Podstawy informatyki
-  - Algorytmy
-  - Struktury danych
+- **01-cs-fundamentals** - Podstawy informatyki
+  - Algorytmy i struktury danych
   - Teoria obliczeń
+  - Podstawy matematyczne
 
-- [02-programming](02-programming/) - Programowanie
-  - Paradygmaty programowania
-  - Koncepcje programistyczne
+- **02-programming** - Koncepcje programowania
+  - Paradygmaty programowania (OOP, Funkcyjne, Imperatywne)
   - Zasady projektowania
+  - Systemy typów i koncepcje językowe
 
-- [03-design-patterns](03-design-patterns/) - Wzorce projektowe
+- **03-design-patterns** - Wzorce projektowe
   - Wzorce kreacyjne
   - Wzorce strukturalne
   - Wzorce behawioralne
   - Wzorce architektoniczne
+  - Zasady SOLID
 
-- [04-languages](04-languages/) - Języki programowania
+- **04-languages** - Języki programowania
   - Python
-  - JavaScript
-  - TypeScript
+  - JavaScript/TypeScript
   - C++
   - PHP
 
-- [05-web-development](05-web-development/) - Rozwój Aplikacji Webowych
+- **05-web-development** - Rozwój aplikacji webowych
   - Frontend (React, Vue)
-  - Backend (Node.js)
+  - Technologie backendowe
   - GraphQL
+  - Bezpieczeństwo i wydajność aplikacji webowych
 
-- [06-databases](06-databases/) - Bazy Danych
-  - SQL
-  - NoSQL
-  - Projektowanie baz danych
+- **06-databases** - Bazy danych
+  - Bazy danych SQL
+  - Bazy danych NoSQL
+  - Projektowanie i optymalizacja baz danych
 
-- [07-devops](07-devops/) - DevOps
-  - Linux
-  - Serwery
-  - Kontenery
+- **07-devops** - DevOps
+  - Administracja Linux/Unix
+  - Konteneryzacja (Docker)
+  - CI/CD i wdrażanie
+  - Usługi chmurowe
 
-- [08-ai-ml](08-ai-ml/) - Sztuczna inteligencja i machine learning
-  - Machine Learning
+- **08-ai-ml** - AI i Machine Learning
+  - Algorytmy uczenia maszynowego
   - Deep Learning
+  - Computer Vision
+  - Przetwarzanie języka naturalnego
 
-- [09-philosophy](09-philosophy/) - Filozofia
+- **09-philosophy** - Filozofia technologii
+  - Etyka w technologii
+  - Logika
+  - Epistemologia
 
-- [10-interview-prep](10-interview-prep/) - Przygotowanie do rozmów kwalifikacyjnych
-  - Wyzwania programistyczne
+- **10-interview-prep** - Przygotowanie do rozmów kwalifikacyjnych
+  - Zadania programistyczne
   - Projektowanie systemów
   - Pytania behawioralne
 
-- [resources](resources/) - Zasoby
-  - Książki
-  - Kursy
-  - Narzędzia
+## Zastosowanie
 
-## Jak korzystać z tego repozytorium
+Te notatki są zorganizowane głównie dla osobistego użytku, ale mogą być przydatne dla innych studiujących podobne tematy. Większość treści jest w formacie Markdown.
 
-1. Przejdź do odpowiedniego katalogu tematycznego
-2. Sprawdź plik INDEX.md w danym katalogu, aby zobaczyć dostępne materiały
-3. Postępuj zgodnie z sugerowanymi ścieżkami nauki w pliku [LEARNING_PATHS.md](LEARNING_PATHS.md)
+## Licencja
 
-## Formatowanie
-
-Większość notatek jest napisana w formacie Markdown dla łatwego czytania. Niektóre przykłady kodu mogą być dostępne w formacie Jupyter Notebook.
+Ten projekt jest objęty licencją MIT - szczegóły znajdują się w pliku LICENSE.
