@@ -1,3 +1,5 @@
+![idea](https://github.com/user-attachments/assets/aea6a091-d88a-4627-a64f-d73a5c04de8a)
+
 # Knowledge Repository - Programming & Computer Science
 
 This repository contains a comprehensive collection of notes on programming, computer science, and related disciplines. It serves as a personal knowledge base covering various technical topics, organized in a structured manner.
