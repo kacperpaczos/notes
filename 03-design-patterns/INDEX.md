@@ -6,22 +6,19 @@ Ten katalog zawiera materiały dotyczące różnych wzorców projektowych używa
 
 ### Podkatalogi
 
-- [creational/](creational/)
-- [architectural/](architectural/)
-- [behavioral/](behavioral/)
-- [structural/](structural/)
+- [creational/](creational/) - Wzorce kreacyjne
+- [architectural/](architectural/) - Wzorce architektoniczne
+- [behavioral/](behavioral/) - Wzorce behawioralne
+- [structural/](structural/) - Wzorce strukturalne
+- [uml/](uml/) - Diagramy UML i modelowanie
 
 ### Pliki
 
 - [Architectural_Patterns.md](Architectural_Patterns.md)
 - [Design_Patterns_Overview.md](Design_Patterns_Overview.md)
-- [Creational](Creational)
-- [Patterns.md](Patterns.md)
-- [INDEX_20250518.md](INDEX_20250518.md)
-- [Behavioral](Behavioral)
-- [Patterns.md](Patterns.md)
-- [wzorce.png](wzorce.png)
+- [Creational Patterns.md](Creational%20Patterns.md)
+- [Behavioral Patterns.md](Behavioral%20Patterns.md)
+- [Structural Patterns.md](Structural%20Patterns.md)
 - [Singleton_Pattern.md](Singleton_Pattern.md)
-- [Structural](Structural)
-- [Patterns.md](Patterns.md)
+- [wzorce.png](wzorce.png)
 
