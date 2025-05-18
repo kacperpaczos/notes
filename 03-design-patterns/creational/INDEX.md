@@ -1,21 +1,20 @@
-# creational
+# Wzorce Kreacyjne (Creational Patterns)
 
-Ten katalog jest częścią sekcji 03-design-patterns.
+Wzorce kreacyjne zajmują się mechanizmami tworzenia obiektów, próbując tworzyć obiekty w sposób odpowiedni do sytuacji.
 
-## Zawartość katalogu
+## Wzorce w tej kategorii
 
-### Podkatalogi
+| Wzorzec | Przeznaczenie |
+|---------|---------------|
+| [Abstract Factory](abstract-factory/) | Tworzenie rodzin powiązanych obiektów bez określania ich konkretnych klas |
+| [Builder](builder/) | Oddzielenie konstrukcji złożonego obiektu od jego reprezentacji |
+| [Factory Method](factory-method/) | Definiowanie interfejsu do tworzenia obiektów, pozwalanie podklasom decydować którą klasę instancjonować |
+| [Prototype](prototype/) | Tworzenie obiektów przez kopiowanie istniejącego obiektu |
+| [Singleton](singleton/) | Zapewnienie, że klasa ma tylko jedną instancję i zapewnienie globalnego punktu dostępu do niej |
 
-- [factory/](factory/)
-- [builder/](builder/)
-- [singleton/](singleton/)
-- [prototype/](prototype/)
-- [abstract-factory/](abstract-factory/)
+## Materiały dodatkowe
 
-### Pliki
-
-- [Creational](Creational)
-- [Patterns.md](Patterns.md)
+- [Creational Patterns.md](../Creational%20Patterns.md)
 - [overview.md](overview.md)
-- [Singleton_Pattern.md](Singleton_Pattern.md)
+- [Singleton_Pattern.md](../Singleton_Pattern.md)
 

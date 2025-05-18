@@ -1,26 +1,25 @@
-# behavioral
+# Wzorce Behawioralne (Behavioral Patterns)
 
-Ten katalog jest częścią sekcji 03-design-patterns.
+Wzorce behawioralne dotyczą algorytmów i przydziału odpowiedzialności pomiędzy obiektami. Opisują wzorce komunikacji między obiektami.
 
-## Zawartość katalogu
+## Wzorce w tej kategorii
 
-### Podkatalogi
+| Wzorzec | Przeznaczenie |
+|---------|---------------|
+| [Chain of Responsibility](chain-of-responsibility/) | Przekazanie żądania wzdłuż łańcucha potencjalnych odbiorców |
+| [Command](command/) | Enkapsulacja żądania jako obiekt |
+| [Interpreter](interpreter/) | Definiowanie gramatyki języka i interpretacja zdań |
+| [Iterator](iterator/) | Sekwencyjny dostęp do elementów kolekcji |
+| [Mediator](mediator/) | Definiowanie obiektu który enkapsuluje interakcje między innymi obiektami |
+| [Memento](memento/) | Przechwytywanie i eksternalizacja wewnętrznego stanu obiektu |
+| [Observer](observer/) | Powiadamianie obiektów o zmianach stanu |
+| [State](state/) | Zmiana zachowania obiektu przy zmianie jego stanu |
+| [Strategy](strategy/) | Definiowanie rodziny wymiennych algorytmów |
+| [Template Method](template-method/) | Definiowanie szkieletu algorytmu z możliwością rozszerzania przez podklasy |
+| [Visitor](visitor/) | Oddzielenie operacji od struktury obiektów |
 
-- [memento/](memento/)
-- [observer/](observer/)
-- [visitor/](visitor/)
-- [chain-of-responsibility/](chain-of-responsibility/)
-- [iterator/](iterator/)
-- [template-method/](template-method/)
-- [command/](command/)
-- [interpreter/](interpreter/)
-- [mediator/](mediator/)
-- [state/](state/)
-- [strategy/](strategy/)
+## Materiały dodatkowe
 
-### Pliki
-
-- [Behavioral](Behavioral)
-- [Patterns.md](Patterns.md)
+- [Behavioral Patterns.md](Behavioral%20Patterns.md)
 - [overview.md](overview.md)
 
