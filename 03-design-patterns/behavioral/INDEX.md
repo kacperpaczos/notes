@@ -23,3 +23,23 @@ Wzorce behawioralne dotyczą algorytmów i przydziału odpowiedzialności pomię
 - [Behavioral Patterns.md](Behavioral%20Patterns.md)
 - [overview.md](overview.md)
 
+## Szczegółowe opisy wzorców
+
+### Chain of Responsibility
+Wzorzec Chain of Responsibility pozwala uniknąć ścisłego powiązania nadawcy żądania z jego odbiorcą, dając szansę obsłużenia żądania wielu obiektom. Łańcuch obiektów odbiorczych jest tworzony przez przekazywanie żądania od jednego obiektu do następnego w łańcuchu.
+
+### Command
+Wzorzec Command enkapsuluje żądanie jako obiekt, umożliwiając parametryzację klientów z różnymi żądaniami, kolejkowanie żądań, logowanie żądań oraz obsługę operacji cofania.
+
+### Mediator
+Wzorzec Mediator definiuje obiekt, który enkapsuluje sposób, w jaki zbiór obiektów wchodzi w interakcje. Mediator promuje luźne powiązanie, utrzymując obiekty od bezpośredniego odwoływania się do siebie.
+
+### Observer
+Wzorzec Observer definiuje zależność jeden-do-wielu między obiektami, tak że gdy jeden obiekt zmienia stan, wszystkie zależne od niego obiekty są powiadamiane i automatycznie aktualizowane.
+
+### State
+Wzorzec State pozwala obiektowi zmieniać swoje zachowanie gdy zmienia się jego stan wewnętrzny. Wygląda to tak, jakby obiekt zmieniał swoją klasę.
+
+### Template Method
+Wzorzec Template Method definiuje szkielet algorytmu w metodzie, odkładając niektóre kroki na podklasy. Template Method pozwala podklasom redefiniować określone kroki algorytmu bez zmiany jego struktury.
+

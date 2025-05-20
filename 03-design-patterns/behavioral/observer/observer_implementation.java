@@ -1,101 +1,111 @@
-// Subject.java
+// Interfejs Subject
 public interface Subject {
     void registerObserver(Observer observer);
     void removeObserver(Observer observer);
     void notifyObservers();
 }
 
-// Observer.java
+// Interfejs Observer
 public interface Observer {
-    void update(String status);
+    void update(String message);
 }
 
-// Channel.java
-import java.util.List;
-import java.util.ArrayList;
-
-public class Channel implements Subject {
+// Klasa reprezentująca kanał YouTube
+public class YouTubeChannel implements Subject {
     private List<Observer> observers;
     private String channelName;
-    private String status;
+    private String latestVideo;
 
-    public Channel(String channelName) {
+    public YouTubeChannel(String channelName) {
         this.channelName = channelName;
         this.observers = new ArrayList<>();
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-        System.out.println("[" + channelName + "] New status: " + status);
-        notifyObservers();
     }
 
     @Override
     public void registerObserver(Observer observer) {
         observers.add(observer);
+        System.out.println("Nowy subskrybent: " + ((Subscriber)observer).getName());
     }
 
     @Override
     public void removeObserver(Observer observer) {
         observers.remove(observer);
+        System.out.println("Subskrybent usunięty: " + ((Subscriber)observer).getName());
     }
 
     @Override
     public void notifyObservers() {
         for (Observer observer : observers) {
-            observer.update(status);
+            observer.update(latestVideo);
         }
+    }
+
+    public void uploadVideo(String videoTitle) {
+        this.latestVideo = videoTitle;
+        System.out.println("Kanał " + channelName + " opublikował nowy film: " + videoTitle);
+        notifyObservers();
     }
 }
 
-// Follower.java
-public class Follower implements Observer {
-    private String followerName;
+// Klasa reprezentująca subskrybenta
+public class Subscriber implements Observer {
+    private String name;
+    private List<String> notifications;
 
-    public Follower(String followerName) {
-        this.followerName = followerName;
+    public Subscriber(String name) {
+        this.name = name;
+        this.notifications = new ArrayList<>();
     }
 
     @Override
-    public void update(String status) {
-        System.out.println("Follower " + followerName + " received update: " + status);
-        play();
+    public void update(String videoTitle) {
+        notifications.add(videoTitle);
+        System.out.println(name + " otrzymał powiadomienie o nowym filmie: " + videoTitle);
     }
 
-    public void play() {
-        System.out.println(followerName + " is now playing the new video!");
+    public String getName() {
+        return name;
+    }
+
+    public List<String> getNotifications() {
+        return notifications;
     }
 }
 
-// Main.java - Example usage
+// Przykład użycia
 public class Main {
     public static void main(String[] args) {
-        // Create a YouTube channel
-        Channel youtubeChannel = new Channel("Programming Tutorials");
-        
-        // Create followers
-        Follower follower1 = new Follower("John");
-        Follower follower2 = new Follower("Mike");
-        Follower follower3 = new Follower("Sarah");
-        
-        // Register followers to the channel
-        youtubeChannel.registerObserver(follower1);
-        youtubeChannel.registerObserver(follower2);
-        youtubeChannel.registerObserver(follower3);
-        
-        // Channel uploads a new video
-        youtubeChannel.setStatus("New video: Java Design Patterns");
-        
-        System.out.println("\n--- After follower2 unsubscribes ---\n");
-        
-        // Follower2 unsubscribes
-        youtubeChannel.removeObserver(follower2);
-        
-        // Another video upload
-        youtubeChannel.setStatus("New video: Advanced Java Techniques");
+        // Tworzenie kanału YouTube
+        YouTubeChannel channel = new YouTubeChannel("Programowanie w Javie");
+
+        // Tworzenie subskrybentów
+        Subscriber subscriber1 = new Subscriber("Jan");
+        Subscriber subscriber2 = new Subscriber("Anna");
+        Subscriber subscriber3 = new Subscriber("Piotr");
+
+        // Rejestracja subskrybentów
+        channel.registerObserver(subscriber1);
+        channel.registerObserver(subscriber2);
+        channel.registerObserver(subscriber3);
+
+        // Publikacja nowego filmu
+        System.out.println("\n=== Publikacja nowego filmu ===");
+        channel.uploadVideo("Wzorce projektowe w Javie");
+
+        // Usunięcie subskrybenta
+        System.out.println("\n=== Usunięcie subskrybenta ===");
+        channel.removeObserver(subscriber2);
+
+        // Publikacja kolejnego filmu
+        System.out.println("\n=== Publikacja kolejnego filmu ===");
+        channel.uploadVideo("Spring Framework - wprowadzenie");
+
+        // Wyświetlenie powiadomień dla każdego subskrybenta
+        System.out.println("\n=== Powiadomienia subskrybentów ===");
+        System.out.println("Powiadomienia dla " + subscriber1.getName() + ":");
+        subscriber1.getNotifications().forEach(System.out::println);
+
+        System.out.println("\nPowiadomienia dla " + subscriber3.getName() + ":");
+        subscriber3.getNotifications().forEach(System.out::println);
     }
 } 

@@ -1,10 +1,34 @@
-# template-method
+# Wzorzec Template Method
 
-Ten katalog jest częścią sekcji behavioral.
+Wzorzec Template Method definiuje szkielet algorytmu w metodzie, odkładając niektóre kroki na podklasy. Template Method pozwala podklasom redefiniować określone kroki algorytmu bez zmiany jego struktury.
 
 ## Zawartość katalogu
 
 ### Pliki
 
-- [template-method_pattern.md](template-method_pattern.md)
+- [template_method_pattern.md](template_method_pattern.md) - Szczegółowy opis wzorca Template Method
+- [template_method_implementation.java](template_method_implementation.java) - Implementacja wzorca Template Method w Javie
+
+## Przykład użycia
+
+Wzorzec Template Method jest szczególnie przydatny w następujących sytuacjach:
+- Gdy mamy algorytm składający się z kilku kroków
+- Gdy niektóre kroki algorytmu są wspólne dla wszystkich implementacji
+- Gdy chcemy zapewnić spójną strukturę algorytmu
+- Gdy chcemy uniknąć duplikacji kodu
+
+## Diagram
+
+```
+AbstractClass
+    |
+    |-- templateMethod()
+    |-- primitiveOperation1()
+    |-- primitiveOperation2()
+    |
+ConcreteClass
+    |
+    |-- primitiveOperation1()
+    |-- primitiveOperation2()
+```
 
