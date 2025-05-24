@@ -7,4 +7,5 @@ Ten katalog jest częścią sekcji structural.
 ### Pliki
 
 - [proxy_pattern.md](proxy_pattern.md)
+- [liskov_substitution_principle.md](liskov_substitution_principle.md)
 
