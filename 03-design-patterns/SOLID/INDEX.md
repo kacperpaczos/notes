@@ -6,6 +6,7 @@ This directory contains notes and examples on the SOLID principles of object-ori
 
 - [SOLID Principles - Extended](SOLID_Principles_Extended.md) - Comprehensive explanation of SOLID principles with examples
 - [SOLID Basics](solid.md) - Basic introduction to SOLID concepts
+- [Design Principles Resources](Design_Principles_Resources.md) - Educational materials and videos about design principles
 
 ## SOLID Principles Overview
 
@@ -14,6 +15,11 @@ This directory contains notes and examples on the SOLID principles of object-ori
 - **L**iskov Substitution Principle - Subtypes must be substitutable for their base types
 - **I**nterface Segregation Principle - Many specific interfaces are better than one general interface
 - **D**ependency Inversion Principle - High-level modules should not depend on low-level modules; both should depend on abstractions
+
+## Additional Design Principles
+
+- **Composing Objects Principle** - Favor composition over inheritance
+- **Principle of Least Knowledge** (Law of Demeter) - An object should have limited knowledge of other objects
 
 ## Related Resources
 
