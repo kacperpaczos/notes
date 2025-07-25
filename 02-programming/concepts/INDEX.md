@@ -15,4 +15,5 @@ Ten katalog jest częścią sekcji 02-programming.
 ### Pliki
 
 - [Abstractions_And_Interfaces.md](Abstractions_And_Interfaces.md)
+- [application-types.md](application-types.md) - Application architecture patterns and types
 
