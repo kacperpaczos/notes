@@ -1,21 +1,79 @@
-# Event-driven Pattern
+# Wzorzec Event-Driven
 
-## Intent
+## 📝 Cel
+Wzorzec Event-Driven definiuje sposób komunikacji między komponentami systemu poprzez zdarzenia, gdzie komponenty reagują na zdarzenia zamiast aktywnie kontrolować przepływ wykonania.
 
-## Motivation
+## 🎯 Problem
+Masz system, w którym:
+- Komponenty muszą komunikować się ze sobą
+- Nie chcesz ścisłego powiązania między komponentami
+- Potrzebujesz asynchronicznej komunikacji
+- Chcesz dynamicznie dodawać i usuwać reakcje na zdarzenia
 
-## Structure
+## 🔧 Rozwiązanie
+1. Zdefiniuj strukturę zdarzeń (Event)
+2. Stwórz mechanizm dystrybucji zdarzeń (Event Bus/Dispatcher)
+3. Zaimplementuj event handlers (obserwatorów)
+4. Komponenty publikują zdarzenia zamiast bezpośrednio wywoływać inne komponenty
 
-## Participants
+## 🏗️ Struktura
+```
+Event Source → Event → Event Bus → Event Handlers
+     ↓           ↓         ↓           ↓
+  Generuje   Struktura  Dystrybucja  Reakcja
+  zdarzenie   danych     i routing    na zdarzenie
+```
 
-## Collaborations
+## 📋 Kluczowe komponenty
 
-## Consequences
+| Komponent | Opis |
+|-----------|------|
+| **Event** | Wystąpienie określonego faktu w systemie |
+| **Event Source** | Komponent generujący zdarzenia |
+| **Event Bus** | Mechanizm dystrybucji zdarzeń |
+| **Event Handler** | Funkcja reagująca na zdarzenie |
+| **Observer** | Obiekt subskrybujący zdarzenia |
 
-## Implementation
+## 🔄 Przepływ
+1. Event Source generuje zdarzenie
+2. Event Bus odbiera zdarzenie
+3. Event Bus dystrybuuje zdarzenie do wszystkich zarejestrowanych handlerów
+4. Event Handlers reagują na zdarzenie
 
-## Sample Code
+## ✅ Zalety
+- **Luźne powiązanie** - komponenty nie znają się bezpośrednio
+- **Asynchroniczność** - nieblokująca komunikacja
+- **Dynamiczność** - łatwe dodawanie/usuwanie reakcji
+- **Skalowalność** - wiele handlerów dla jednego zdarzenia
+- **Testowalność** - łatwe mockowanie zdarzeń
 
-## Known Uses
+## ⚠️ Wady
+- **Złożoność** - trudniejsze debugowanie przepływu
+- **Wydajność** - overhead dystrybucji zdarzeń
+- **Spójność** - problemy z kolejnością zdarzeń
+- **Memory leaks** - nieprawidłowe zarządzanie subskrypcjami
 
-## Related Patterns
+## 🔗 Powiązane wzorce
+
+### Observer vs Publish/Subscribe
+
+| Aspekt | Observer Pattern | Publish/Subscribe |
+|--------|------------------|-------------------|
+| **Komunikacja** | Bezpośrednia | Przez pośrednika (broker) |
+| **Zakres** | W obrębie jednego procesu | Między procesami/systemami |
+| **Złożoność** | Prosty | Bardziej złożony |
+| **Wydajność** | Szybki | Wolniejszy (overhead brokera) |
+| **Niezawodność** | Brak gwarancji | Gwarancje dostarczania |
+| **Skalowalność** | Ograniczona | Wysoka |
+
+### Inne wzorce
+- **Mediator Pattern** - koordynacja komunikacji między komponentami
+- **Command Pattern** - enkapsulacja żądań jako obiektów
+- **Event Sourcing** - przechowywanie stanu jako sekwencji zdarzeń
+
+## 📚 Przykłady zastosowania
+- Systemy GUI (React, Vue, Angular)
+- Mikrousługi komunikujące się przez zdarzenia
+- Systemy gier (Unity, Unreal Engine)
+- IoT - czujniki i akcje
+- Systemy monitorowania i alertów

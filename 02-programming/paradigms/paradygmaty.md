@@ -297,3 +297,114 @@ int main() {
     return 0;
 }
 ```
+
+### Zdarzeniowe (Event-Driven)
+
+Paradygmat programowania, w którym przepływ kontroli jest napędzany przez zdarzenia (events). Program reaguje na zdarzenia zamiast aktywnie kontrolować przepływ wykonania. Jest to podejście reaktywne i asynchroniczne.
+
+#### Elementy programowania zdarzeniowego:
+1. **Zdarzenia (Events)** - wystąpienia określonych faktów w systemie (kliknięcie, nadejście wiadomości, zmiana stanu)
+2. **Event Handlers** - funkcje/metody wywoływane w odpowiedzi na zdarzenia
+3. **Event Loop** - mechanizm w tle, który nasłuchuje zdarzeń i dispatchuje je do odpowiednich handlerów
+4. **Event Sources** - komponenty generujące zdarzenia
+5. **Observers** - obiekty subskrybujące zdarzenia ze źródła
+6. **Event Bus** - mechanizm w pamięci, który przechowuje subskrypcje i dystrybuuje zdarzenia
+7. **Publish/Subscribe (Pub/Sub)** - wzorzec komunikacji asynchronicznej z pośrednikiem
+
+#### Cechy charakterystyczne:
+- **Reaktywność** - kod uruchamia się w odpowiedzi na zdarzenia
+- **Dekouplowanie** - źródło zdarzenia nie musi znać implementacji handlerów
+- **Asynchroniczność** - obsługa zdarzeń często jest nieblokująca
+- **Dynamiczność** - można dodawać i usuwać obserwatorów/handlerów w locie
+- **Efektywność** - brak ciągłego "pollingu" → mniejsze zużycie CPU
+
+#### Przykład w C++ z użyciem std::function i std::vector:
+```cpp
+#include <iostream>
+#include <vector>
+#include <functional>
+#include <string>
+
+// Typ zdarzenia
+enum class EventType {
+    CLICK,
+    KEY_PRESS,
+    MOUSE_MOVE
+};
+
+// Struktura zdarzenia
+struct Event {
+    EventType type;
+    std::string data;
+    
+    Event(EventType t, const std::string& d) : type(t), data(d) {}
+};
+
+// Event Handler - funkcja obsługująca zdarzenia
+using EventHandler = std::function<void(const Event&)>;
+
+// Event Bus - mechanizm dystrybucji zdarzeń
+class EventBus {
+private:
+    std::vector<EventHandler> handlers;
+    
+public:
+    // Rejestracja handlera
+    void subscribe(EventHandler handler) {
+        handlers.push_back(handler);
+    }
+    
+    // Publikacja zdarzenia
+    void publish(const Event& event) {
+        for (const auto& handler : handlers) {
+            handler(event);
+        }
+    }
+};
+
+// Przykład użycia
+int main() {
+    EventBus eventBus;
+    
+    // Rejestracja handlerów
+    eventBus.subscribe([](const Event& event) {
+        if (event.type == EventType::CLICK) {
+            std::cout << "Obsłużono kliknięcie: " << event.data << std::endl;
+        }
+    });
+    
+    eventBus.subscribe([](const Event& event) {
+        if (event.type == EventType::KEY_PRESS) {
+            std::cout << "Obsłużono naciśnięcie klawisza: " << event.data << std::endl;
+        }
+    });
+    
+    // Publikacja zdarzeń
+    eventBus.publish(Event(EventType::CLICK, "przycisk OK"));
+    eventBus.publish(Event(EventType::KEY_PRESS, "Enter"));
+    
+    return 0;
+}
+```
+
+#### Zastosowania:
+- **Frontend**: React (`useEffect`), Vue (`watch`), DOM Event Listeners
+- **Backend**: WebSocket, webhooki, systemy kolejek (Kafka, RabbitMQ)
+- **IoT**: czujniki raportujące zdarzenia
+- **Gry**: eventy kolizji, wejścia gracza, zmiany stanu świata
+- **DevOps**: alerty w monitoringu, systemy CI/CD
+
+#### Porównanie z innymi paradygmatami:
+
+| Paradygmat | Kontrola przepływu | Komunikacja | Synchronizacja |
+|------------|-------------------|-------------|----------------|
+| **Imperatywny** | Sekwencyjny | Bezpośrednia | Synchroniczna |
+| **Obiektowy** | Metody obiektów | Wywołania metod | Synchroniczna |
+| **Funkcyjny** | Kompozycja funkcji | Przekazywanie danych | Synchroniczna |
+| **Zdarzeniowy** | Reakcja na zdarzenia | Zdarzenia | Asynchroniczna |
+
+#### Wzorce powiązane:
+- **Observer Pattern** - podstawowy wzorzec do implementacji reakcji na zdarzenia
+- **Publish/Subscribe** - wzorzec komunikacji asynchronicznej
+- **Event Sourcing** - architektura przechowywania stanu jako sekwencji zdarzeń
+- **Reactive Programming** - paradygmat programowania reaktywnego
