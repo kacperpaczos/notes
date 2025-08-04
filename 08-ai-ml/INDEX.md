@@ -11,6 +11,8 @@ Ten katalog zawiera materiały dotyczące sztucznej inteligencji i uczenia maszy
 - [ml/](ml/)
 - [nlp/](nlp/)
 - [transformers/](transformers/) - Architektura Transformer i popularne modele
+- [llm/](llm/) - Large Language Models (LLM) - duże modele językowe
+- [mcp/](mcp/) - Model Context Protocol (MCP) - standard komunikacji AI z systemami zewnętrznymi
 
 ---
 
@@ -49,17 +51,26 @@ Model AI to matematyczna reprezentacja procesu, która na podstawie danych wejś
 - Modele generatywne
 - Modele językowe (LLM)
 
-**Popularne modele:**
-- GPT (OpenAI)
-- BERT, RoBERTa, T5 (Google, Hugging Face)
-- PaLM (Google)
-- Llama (Meta)
-- Stable Diffusion (generowanie obrazów)
+**Popularne modele (2024-2025):**
+- **GPT-4 Turbo/4o** (OpenAI) - multimodalny, tool use
+- **Claude 3.5 Sonnet** (Anthropic) - Constitutional AI, safety
+- **Gemini 1.5 Pro** (Google) - ultra-long context (1M tokens)
+- **LLaMA 3 70B** (Meta) - open-weight, high performance
+- **Mistral 8x7B** (Mistral AI) - MoE architecture, efficient
+- **CodeLlama 70B** (Meta) - specjalizacja w kodzie
+
+**Aktualne trendy (2024-2025):**
+- **Multimodalność** - integracja tekstu, obrazów, audio, wideo
+- **Tool use** - korzystanie z zewnętrznych narzędzi i API
+- **Reasoning** - Chain-of-Thought, Tree of Thoughts
+- **Efektywność** - Mixture of Experts, quantization
+- **Safety** - RLHF, Constitutional AI, red teaming
 
 **Pytania kontrolne:**
 - Jakie są różnice między modelem klasyfikacyjnym a generatywnym?
 - Do czego służy model BERT?
 - Jakie zadania można rozwiązywać za pomocą modeli LLM?
+- Jakie są główne trendy w rozwoju LLM w 2024-2025?
 
 ### 3. Agenci AI
 
@@ -125,17 +136,19 @@ Agent AI to system, który autonomicznie podejmuje decyzje i wykonuje zadania na
   - Automatyzacja złożonych procesów
   - Systemy współpracy człowiek-AI
 
-**MCP (Multi-Agent Collaboration Protocol):**
-- **Definicja:** Protokół umożliwiający współpracę wielu agentów AI
+**MCP (Model Context Protocol):**
+- **Definicja:** Otwarty standard umożliwiający AI komunikację z zewnętrznymi systemami
 - **Cechy:**
-  - Definiowanie ról i odpowiedzialności
-  - Mechanizmy koordynacji i synchronizacji
-  - Rozwiązywanie konfliktów
-  - Dzielenie się wiedzą i zasobami
+  - Uniwersalny interfejs (jak USB dla AI)
+  - Plug & play - podłącz serwer, udostępnij zasoby
+  - Obsługa różnych transportów (STDIO, HTTP+SSE)
+  - Protokół JSON-RPC 2.0
 - **Zastosowania:**
-  - Złożone systemy decyzyjne
-  - Środowiska symulacyjne
-  - Automatyzacja pracy zespołowej
+  - Integracja z bazami danych
+  - Łączenie z API i narzędziami biznesowymi
+  - Systemy pamięci AI
+  - Narzędzia deweloperskie
+- **Więcej informacji:** [mcp/](mcp/) - szczegółowe notatki o MCP
 
 **Integracja agentów:**
 - API
@@ -148,7 +161,7 @@ Agent AI to system, który autonomicznie podejmuje decyzje i wykonuje zadania na
 - Co to jest architektura ReAct?
 - Jakie są różnice między LangChain a Google ADK?
 - Co to jest A2A i jakie ma zastosowania?
-- Jak MCP wspiera współpracę między agentami?
+- Jak MCP umożliwia komunikację AI z systemami zewnętrznymi?
 
 ### 4. Narzędzia Google do AI
 
@@ -252,7 +265,7 @@ Zbiór najważniejszych terminów i skrótów używanych w AI, ML i agentach.
 **Przykładowe hasła:**
 - **LLM** - Large Language Model (Duży Model Językowy)
 - **A2A** - Agent-to-Agent Communication (Komunikacja między agentami)
-- **MCP** - Multi-Agent Collaboration Protocol (Protokół współpracy wielu agentów)
+- **MCP** - Model Context Protocol (Protokół kontekstu modelu - standard komunikacji AI z systemami zewnętrznymi)
 - **ADK** - AI Development Kit (Zestaw narzędzi do tworzenia aplikacji AI)
 - **RAG** - Retrieval-Augmented Generation (Generowanie wspierane wyszukiwaniem)
 - **Inferencja** - Proces generowania przewidywań przez model
@@ -275,6 +288,10 @@ Zbiór najważniejszych terminów i skrótów używanych w AI, ML i agentach.
 - Phidata: https://docs.phidata.com/
 - LangChain: https://python.langchain.com/
 - Google ADK: https://ai.google.dev/
+- Model Context Protocol: https://modelcontextprotocol.io/
+- OpenAI API: https://platform.openai.com/docs
+- Anthropic API: https://docs.anthropic.com/
+- Google AI: https://ai.google.dev/
 
 **Tutoriale, kursy, blogi:**
 - Kursy na Coursera, Udemy
