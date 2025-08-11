@@ -1,5 +1,30 @@
 # Dockerfile & Images
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 🐳 **Dockerfile** – plik definiujący obraz aplikacji
 
 ### Podstawowa struktura Dockerfile
@@ -81,7 +106,7 @@ ARG BUILD_DATE
 FROM node:${VERSION}
 ```
 
-### 📦 **Docker Image** – statyczny snapshot aplikacji + środowisko
+### 📦 **Docker Image** – niemutowalny artefakt (aplikacja + środowisko)
 
 #### Warstwy obrazu (Layers)
 - **Union File System** - każda instrukcja tworzy nową warstwę

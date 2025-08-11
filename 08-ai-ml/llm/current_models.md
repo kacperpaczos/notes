@@ -1,5 +1,30 @@
 # Aktualne modele LLM (2024-2025)
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 🏆 Top-tier modele komercyjne
 
 ### GPT-4 Turbo (OpenAI)

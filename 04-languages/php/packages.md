@@ -1,3 +1,30 @@
+# packages
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Namespaces in PHP help organize code and prevent conflicts between classes, functions, and constants. They work like unique identifiers for different parts of a project.  
 
 Declaring a namespace in PHP is done using the `namespace` keyword at the beginning of a file. For example:  

@@ -1,3 +1,30 @@
+# Referential Equality
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 #### Referential Equality
 
 Jest to algorytm w react, który sprawdza czy dane obiekty zadeklarowane w pamięci, ś atym samym.

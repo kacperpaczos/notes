@@ -1,5 +1,30 @@
 # MCP Server z SQLite - Wyciąg z artykułu
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 📋 Cel
 Model Context Protocol (MCP) to otwarty standard wprowadzony przez Antrobic w listopadzie 2024, który pozwala AI komunikować się z zewnętrznymi źródłami danych, repozytoriami treści, wywołaniami funkcji i szablonami promptów w sposób bezpieczny, elastyczny i z minimalnym wysiłkiem.
 

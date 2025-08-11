@@ -1,5 +1,30 @@
 # Wzorzec Chain of Responsibility
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Wzorzec Chain of Responsibility pozwala uniknąć ścisłego powiązania nadawcy żądania z jego odbiorcą, dając szansę obsłużenia żądania wielu obiektom. Łańcuch obiektów odbiorczych jest tworzony przez przekazywanie żądania od jednego obiektu do następnego w łańcuchu.
 
 ## Zawartość katalogu

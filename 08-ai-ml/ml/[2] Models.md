@@ -1,3 +1,30 @@
+# [2] Models
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Model w uczeniu maszynowym
 
 Model w uczeniu maszynowym to uproszczona reprezentacja rzeczywistości, która jest trenowana na podstawie danych, aby przewidywać wyniki lub podejmować decyzje bez jawnego programowania do tych zadań. Model uczy się z doświadczenia – im więcej danych jest dostępnych do nauki, tym model może stać się dokładniejszy w swoich przewidywaniach.

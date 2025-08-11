@@ -1,5 +1,22 @@
 # Wzorzec Mediator
 
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Cel
 Definiuje obiekt, który enkapsuluje sposób, w jaki zbiór obiektów wchodzi w interakcje. Mediator promuje luźne powiązanie, utrzymując obiekty od bezpośredniego odwoływania się do siebie, i pozwala na niezależną zmianę ich interakcji.
 

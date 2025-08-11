@@ -1,3 +1,30 @@
+# Top-DownApproach
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 2. Top-Down Approach (Podejście odgórne)
 
 Podejście odgórne to metoda projektowania i rozwiązywania problemów, która rozpoczyna się od ogólnego obrazu systemu i stopniowo przechodzi do bardziej szczegółowych elementów. W kontekście programowania i projektowania systemów, podejście to charakteryzuje się następującymi cechami:

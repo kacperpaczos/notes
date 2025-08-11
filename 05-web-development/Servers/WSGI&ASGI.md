@@ -1,3 +1,30 @@
+# WSGI&ASGI
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Nginx is a high-performance web server and reverse proxy that sits at the front of your application stack. It is responsible for receiving incoming HTTP requests, handling SSL termination, load balancing, and serving static files. In production setups, Nginx forwards requests to backend application servers. It works with both WSGI-based and ASGI-based systems, which makes it a versatile choice in various architectures. When dealing with protocols like WebSocket, Nginx requires specific configurations such as connection upgrades, appropriate timeout settings, and proper keep-alive parameters.
 
 WSGI (Web Server Gateway Interface) is an older standard for interfacing web servers with Python applications. It operates synchronously, meaning each request is processed in a blocking manner. This is adequate for traditional web applications using frameworks like Django or Flask. However, the blocking nature of WSGI can become a bottleneck when handling a high number of concurrent connections or real-time interactions.

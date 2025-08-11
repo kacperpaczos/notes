@@ -2,6 +2,31 @@
 
 # Knowledge Repository - Programming & Computer Science
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 This repository contains a comprehensive collection of notes on programming, computer science, and related disciplines. It serves as a personal knowledge base covering various technical topics, organized in a structured manner.
 
 ## Repository Structure

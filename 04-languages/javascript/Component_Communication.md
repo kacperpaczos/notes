@@ -1,5 +1,30 @@
 # Komunikacja Między Komponentami w JS
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Event Bus (Szyna Zdarzeń)
 - **Definicja**: Centralny obiekt do publikowania i subskrybowania zdarzeń w aplikacji
 - **Działanie**: Komponenty emitują zdarzenia, które są odbierane przez inne komponenty

@@ -1,5 +1,30 @@
 # 📊 Metryki Testowe i Nowoczesne Wzorce
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 📚 Spis Treści
 
 1. [Metryki Podstawowe](#metryki-podstawowe)

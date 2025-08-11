@@ -1,5 +1,30 @@
 # Migration to Jupyter Notebooks
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Overview
 
 This repository is planned to be migrated to Jupyter Notebook format to enhance interactivity and facilitate learning. This document outlines the migration plan and key considerations.

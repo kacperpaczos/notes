@@ -1,3 +1,30 @@
+# createContext
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Służy do przekazania danych w dół, bez potrzeby przekazania ich przez każdy komponent po dordze poprzez propsy.
 
 ```

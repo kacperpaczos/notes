@@ -1,5 +1,30 @@
 # Wzorce Behawioralne (Behavioral Patterns)
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Wzorce behawioralne dotyczą algorytmów i przydziału odpowiedzialności pomiędzy obiektami. Opisują wzorce komunikacji między obiektami.
 
 ## Wzorce w tej kategorii

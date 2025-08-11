@@ -1,3 +1,30 @@
+# paradigms overview
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ### Paradygmat
 Paradygmat skupia się na tym, jak coś zrobić, a nie na tym, co zrobić. Jest to sposób, w jaki postrzegamy i interpretujemy określony fragment rzeczywistości. Paradygmat programowania definiuje podejście do rozwiązywania problemów i strukturyzacji kodu w konkretny sposób.
 ### Imperatywny

@@ -1,5 +1,30 @@
 # Wzorzec Observer
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 📋 Przegląd
 
 Wzorzec Observer definiuje zależność jeden-do-wielu między obiektami, tak że gdy jeden obiekt (Subject) zmienia stan, wszystkie zależne od niego obiekty (Observers) są powiadamiane i automatycznie aktualizowane.
@@ -42,10 +67,10 @@ ConcreteObserver
 ## 📚 Przykłady zastosowań
 
 ### Frontend Development
-- **React** - useState, useEffect hooks
-- **Vue.js** - reactive data, watchers
-- **Angular** - Observables, EventEmitter
-- **DOM Events** - addEventListener, removeEventListener
+- **React** — stan i efekty (reaktywność; nie klasyczny Observer)
+- **Vue.js** — reactive data, watchers
+- **Angular** — RxJS Observable, EventEmitter
+- **DOM Events** — addEventListener/removeEventListener
 
 ### Backend Development
 - **Spring Events** (Java) - ApplicationEventPublisher
@@ -54,7 +79,7 @@ ConcreteObserver
 - **Python** - asyncio, callbacks
 
 ### Systemy
-- **MVC Pattern** - Model notyfikuje View o zmianach
+- **MVC Pattern** — Model powiadamia Widok o zmianach
 - **Systemy powiadomień** - email, SMS, push notifications
 - **Systemy monitorowania** - alerty, metryki
 - **Systemy subskrypcji** - newsletter, RSS feeds

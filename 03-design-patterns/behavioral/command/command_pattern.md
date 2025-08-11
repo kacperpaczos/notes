@@ -1,5 +1,22 @@
 # Wzorzec Command
 
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Cel
 Enkapsuluje żądanie jako obiekt, umożliwiając parametryzację klientów z różnymi żądaniami, kolejkowanie żądań, logowanie żądań oraz obsługę operacji cofania.
 

@@ -1,5 +1,30 @@
 # Lista Kontrolna Przygotowania do Rozmowy Technicznej
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Przed rozmową
 - [ ] Zbadaj firmę i jej produkty
 - [ ] Przejrzyj opis stanowiska i wymagane umiejętności

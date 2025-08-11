@@ -1,5 +1,30 @@
 # Wzorzec Event-Driven
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 📝 Cel
 Wzorzec Event-Driven definiuje sposób komunikacji między komponentami systemu poprzez zdarzenia, gdzie komponenty reagują na zdarzenia zamiast aktywnie kontrolować przepływ wykonania.
 

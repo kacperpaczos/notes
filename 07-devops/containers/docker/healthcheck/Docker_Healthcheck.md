@@ -1,5 +1,30 @@
 # Docker HEALTHCHECK
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Czym jest HEALTHCHECK?
 
 HEALTHCHECK pozwala Docker'owi okresowo sprawdzać, czy kontener działa poprawnie. Docker może automatycznie restartować niezdrowe kontenery.

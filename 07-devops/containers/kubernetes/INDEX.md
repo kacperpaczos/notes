@@ -1,5 +1,30 @@
 # Kubernetes (K8s)
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Ten katalog jest częścią sekcji containers.
 
 ## Zawartość katalogu
@@ -15,9 +40,7 @@ Ten katalog jest częścią sekcji containers.
 - [kustomize/](kustomize/) - K8s customization tool
   - [Kustomize Basics](kustomize/Kustomize_Basics.md) - Podstawy Kustomize
   - [Kustomize Overlays](kustomize/Kustomize_Overlays.md) - Overlay patterns
-- [docker-swarm/](docker-swarm/) - Docker Swarm orchestration
-  - [Docker Swarm Basics](docker-swarm/Docker_Swarm_Basics.md) - Podstawy Docker Swarm
-  - [Docker Swarm Services](docker-swarm/Docker_Swarm_Services.md) - Zarządzanie usługami
+  
 
 ## Kluczowe tematy
 
@@ -65,7 +88,7 @@ Ten katalog jest częścią sekcji containers.
 - **Access modes** - ReadWriteOnce, ReadOnlyMany, ReadWriteMany
 - **Volume snapshots** - backup and restore capabilities
 
-#### **Node / Cluster / Master / Worker** – architektura klastra
+#### **Control Plane / Node (worker)** – architektura klastra
 - **Control plane** - API Server, Scheduler, Controller Manager, etcd
 - **Worker nodes** - kubelet, kube-proxy, container runtime
 - **Node management** - node registration, taints, cordoning
@@ -91,7 +114,7 @@ Ten katalog jest częścią sekcji containers.
 - **Value types** - strings, numbers, booleans, arrays, objects
 - **Value validation** - schema validation
 
-#### **Templates** – pliki YAML z Go-template do dynamicznych zasobów
+#### **Templates** – pliki YAML z Go templates do dynamicznych zasobów
 - **Template functions** - built-in and custom functions
 - **Template pipelines** - chaining functions
 - **Template conditionals** - if/else statements
@@ -211,9 +234,9 @@ Ten katalog jest częścią sekcji containers.
 - **Kustomize overlays** - environment-specific configs
 - **GitOps** - declarative deployments
 
-#### 4. **Observability i CI/CD** (Prometheus, Grafana, ArgoCD)
+#### 4. **Observability i CI/CD** (Prometheus, Grafana, Argo CD)
 - **Monitoring** - Prometheus, Grafana
 - **Logging** - ELK stack, Loki
 - **Tracing** - Jaeger, Zipkin
-- **CI/CD** - ArgoCD, Flux, Tekton
+- **CI/CD** - Argo CD, Flux, Tekton
 

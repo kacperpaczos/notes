@@ -1,5 +1,30 @@
 # Zasada Podstawienia Liskova (Liskov Substitution Principle)
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Wprowadzenie
 Zasada podstawienia Liskova (LSP) jest jedną z fundamentalnych zasad SOLID w programowaniu obiektowym. Została sformułowana przez Barbarę Liskov w 1987 roku.
 

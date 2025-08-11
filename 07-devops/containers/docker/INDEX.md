@@ -1,5 +1,30 @@
 # Docker
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Ten katalog jest częścią sekcji containers.
 
 ## Zawartość katalogu
@@ -20,7 +45,7 @@ Ten katalog jest częścią sekcji containers.
 
 ### 🐳 **Dockerfile & Images**
 - **Dockerfile** – plik definiujący obraz aplikacji
-- **Docker Image** – statyczny snapshot aplikacji + środowisko
+- **Docker Image** – niemutowalny artefakt (aplikacja + środowisko)
 - **Multi-stage builds** – optymalizacja rozmiaru obrazów
 - **Layer caching** – strategie optymalizacji buildów
 - **Base images** – wybór odpowiednich obrazów bazowych
@@ -33,7 +58,7 @@ Ten katalog jest częścią sekcji containers.
 - **Container inspection** – logs, exec, inspect
 
 ### 🎼 **Docker Compose**
-- **Docker Compose** – orkiestracja lokalna kontenerów (dev/test)
+- **Docker Compose** – deklaratywne definiowanie usług (dev/test)
 - **Service definitions** – definiowanie usług
 - **Environment variables** – konfiguracja środowiskowa
 - **Networking** – komunikacja między kontenerami

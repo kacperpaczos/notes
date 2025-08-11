@@ -1,5 +1,30 @@
 # Ekosystem MCP w 2024-2025
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 🎯 Aktualny stan MCP
 
 Model Context Protocol (MCP) to dynamicznie rozwijający się standard, który w 2024-2025 roku zyskał znaczną popularność w ekosystemie AI.

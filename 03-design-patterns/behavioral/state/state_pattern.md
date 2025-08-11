@@ -1,5 +1,22 @@
 # Wzorzec State
 
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Cel
 Pozwala obiektowi zmieniać swoje zachowanie gdy zmienia się jego stan wewnętrzny. Wygląda to tak, jakby obiekt zmieniał swoją klasę.
 

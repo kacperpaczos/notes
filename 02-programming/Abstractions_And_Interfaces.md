@@ -1,5 +1,30 @@
 # Abstrakcje i Interfejsy
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Abstrakcja
 - **Definicja**: Ukrywanie szczegółów implementacyjnych, eksponowanie tylko kluczowej funkcjonalności
 - **Klasa abstrakcyjna**: Może zawierać implementację metod oraz pola, ale nie można tworzyć jej instancji

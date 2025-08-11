@@ -1,5 +1,30 @@
 # Docker ENTRYPOINT
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Czym jest ENTRYPOINT?
 
 ENTRYPOINT definiuje główną komendę uruchamianą w kontenerze. W przeciwieństwie do CMD, nie może być nadpisany przez `docker run`.

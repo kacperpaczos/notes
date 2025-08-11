@@ -1,5 +1,30 @@
 # Przewodnik migracji do konteneryzacji i orkiestracji
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 🔄 **Strategia migracji do Kubernetes (etapy)**
 
 ### Etap 1: **Dockerize** aplikację (Dockerfile, Compose)
@@ -270,7 +295,7 @@ configMapGenerator:
   - log_level=info
 ```
 
-### Etap 4: **Observability i CI/CD** (Prometheus, Grafana, ArgoCD)
+### Etap 4: **Observability i CI/CD** (Prometheus, Grafana, Argo CD)
 
 #### Monitoring z Prometheus
 ```yaml
@@ -334,7 +359,7 @@ jobs:
         kubectl set image deployment/myapp myapp=myapp:${{ github.sha }}
 ```
 
-#### GitOps z ArgoCD
+#### GitOps z Argo CD
 ```yaml
 # argocd-app.yaml
 apiVersion: argoproj.io/v1alpha1

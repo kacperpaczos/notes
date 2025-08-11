@@ -1,3 +1,30 @@
+# Four Tenets of OOP
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 1. Abstrakcja
    - Ukrywanie złożoności i przedstawianie tylko niezbędnych cech obiektu
    - Pozwala skupić się na tym, co obiekt robi, a nie jak to robi

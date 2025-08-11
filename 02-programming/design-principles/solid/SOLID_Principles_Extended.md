@@ -1,5 +1,30 @@
 # Zasady SOLID - Rozszerzenie
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## S - Single Responsibility Principle
 - **Zasada**: Klasa powinna mieć tylko jeden powód do zmiany
 - **Praktycznie**: Każda klasa odpowiada za jedną i tylko jedną funkcjonalność

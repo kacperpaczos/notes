@@ -1,5 +1,30 @@
 # Wzorce Kreacyjne (Creational Patterns)
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Wzorce kreacyjne zajmują się mechanizmami tworzenia obiektów, próbując tworzyć obiekty w sposób odpowiedni do sytuacji.
 
 ## Wzorce w tej kategorii

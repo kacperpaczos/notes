@@ -1,5 +1,30 @@
 # Wzorzec State
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Wzorzec State pozwala obiektowi zmieniać swoje zachowanie gdy zmienia się jego stan wewnętrzny. Wygląda to tak, jakby obiekt zmieniał swoją klasę.
 
 ## Zawartość katalogu

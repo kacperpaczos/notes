@@ -1,3 +1,30 @@
+# files with env variables
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Oto skondensowana lista plików systemowych Linuxa wraz z krótkimi opisami i przykładowymi danymi:
 
 /etc/os-release - Informacje o systemie operacyjnym. Przykład: NAME="Ubuntu", VERSION="20.04 LTS".

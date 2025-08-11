@@ -1,3 +1,30 @@
+# property-getters
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ### Flashcard 1
 **Q:** What is a **field** in object-oriented programming?  
 **A:** A field is a variable stored in a class (or object) that holds data. Its visibility is controlled by access modifiers (e.g., public, private, protected).

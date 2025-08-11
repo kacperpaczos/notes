@@ -1,5 +1,30 @@
 # Helm Basics
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 📦 **Helm (Kubernetes package manager)** – zarządzanie aplikacjami w K8s
 
 ### **Chart** – paczka K8s (templatki + wartości)
@@ -137,7 +162,7 @@ servers:
     port: 8080
 ```
 
-### **Templates** – pliki YAML z Go-template do dynamicznych zasobów
+### **Templates** – pliki YAML z Go templates do dynamicznych zasobów
 
 #### Podstawowe szablony
 ```yaml

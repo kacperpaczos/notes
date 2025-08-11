@@ -1,5 +1,30 @@
 # Event-Driven Architecture
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 📚 Przegląd
 
 Event-Driven Architecture (EDA) to paradygmat architektoniczny, w którym przepływ danych i kontroli jest napędzany przez zdarzenia. Systemy event-driven są reaktywne, asynchroniczne i luźno powiązane.

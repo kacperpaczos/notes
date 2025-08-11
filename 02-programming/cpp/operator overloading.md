@@ -1,5 +1,30 @@
 # Przeciążanie operatorów w C++
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Przeciążanie operatorów to technika w C++, która pozwala na nadanie nowego znaczenia standardowym operatorom dla typów zdefiniowanych przez użytkownika. Dzięki temu możemy używać operatorów w sposób intuicyjny z naszymi własnymi klasami.
 
 ## Podstawowe zasady:

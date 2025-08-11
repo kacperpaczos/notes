@@ -1,25 +1,51 @@
 # containers
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Ten katalog jest częścią sekcji 07-devops.
 
 ## Zawartość katalogu
 
 ### Podkatalogi
 
-- [kubernetes/](kubernetes/) - Kubernetes, Helm, Kustomize, Docker Swarm
-- [docker/](docker/) - Docker, Dockerfile, Images, Containers, Compose, Volumes, Registry
-- [orchestration/](orchestration/) - Orchestration tools and patterns
-- [docker-compose/](docker-compose/) - Docker Compose examples and patterns
+- [docker/](docker/) — Docker, Dockerfile, Images, Containers, Volumes, Registry
+- [docker-compose/](docker-compose/) — Docker Compose: definicje usług, profile, sieci
+- [kubernetes/](kubernetes/) — Kubernetes, Helm, Kustomize
+- [orchestration/](orchestration/) — Orkiestracja (Docker Swarm, Nomad, wzorce)
 
 ## Kluczowe tematy
 
 ### 🐳 **Docker & Konteneryzacja**
-- **Dockerfile** – plik definiujący obraz aplikacji
-- **Docker Image** – statyczny snapshot aplikacji + środowisko
-- **Docker Container** – uruchomiona instancja obrazu
-- **Docker Compose** – orkiestracja lokalna kontenerów (dev/test)
-- **Volumes / Bind mounts** – mechanizmy trwałości danych
-- **Docker Registry** – repozytorium obrazów (np. Docker Hub)
+- **Dockerfile** — przepis na budowę obrazu
+- **Image** — niemutowalny artefakt z warstw (layers), wersjonowany tagami
+- **Container** — uruchomiona instancja obrazu (izolacja procesu)
+- **Docker Compose** — deklaratywne definiowanie usług (dev/test)
+- **Volumes** — trwałość danych zarządzana przez Dockera
+- **Bind mounts** — mapowanie katalogów/plików z hosta (kod, konfiguracje)
+- **Registry** — rejestr obrazów (np. Docker Hub, GHCR)
 
 ### ⚓ **Docker Swarm**
 - **Swarm Mode** – tryb klastra w Dockerze (wbudowana orkiestracja)
@@ -37,12 +63,12 @@ Ten katalog jest częścią sekcji 07-devops.
 - **ConfigMap / Secret** – konfiguracja i hasła
 - **Namespace** – izolacja środowisk
 - **PersistentVolume / Claim** – trwałość danych
-- **Node / Cluster / Master / Worker** – architektura klastra
+- **Control Plane / Node (worker)** – architektura klastra
 
 ### 📦 **Helm (Kubernetes package manager)**
 - **Chart** – paczka K8s (templatki + wartości)
 - **Values.yaml** – konfiguracja użytkownika
-- **Templates** – pliki YAML z Go-template do dynamicznych zasobów
+- **Templates** — pliki YAML z Go templates do dynamicznych zasobów
 - **Releases** – instancje zainstalowanych chartów
 - **helm install / upgrade / rollback / uninstall**
 - **OCI registry / Chart repository**
@@ -59,14 +85,13 @@ Ten katalog jest częścią sekcji 07-devops.
 1. **Dockerize** aplikację (Dockerfile, Compose)
 2. **Zautomatyzuj provisioning** (Ansible / Terraform)
 3. **Deploy do klastra K8s** (ręcznie / Helm / Kustomize)
-4. **Observability i CI/CD** (Prometheus, Grafana, ArgoCD)
+4. **Observability i CI/CD** (Prometheus, Grafana, Argo CD)
 
 ### 🔍 **DevOps & praktyki**
-- **CI/CD pipelines** – np. GitHub Actions, GitLab CI, Argo
-- **IaC (Infrastructure as Code)** – Ansible, Terraform
-- **Blue/Green Deployment**, **Canary Releases**
-- **Zero downtime deployments**
-- **RBAC (Role Based Access Control)**
-- **Monitoring & Logging** – Prometheus, Loki, Grafana, ELK
-- **Security best practices** – least privilege, secret rotation
+- **CI/CD** — GitHub Actions/GitLab CI, Argo CD (GitOps)
+- **IaC** — Terraform, Ansible
+- **Blue/Green**, **Canary**, **Zero-downtime**
+- **RBAC** i polityki (OPA Gatekeeper / Kyverno)
+- **Monitoring & Logging** — Prometheus, Loki, Grafana, ELK
+- **Security** — Trivy (skan), Cosign (podpisy), SBOM, Pod Security Admission
 

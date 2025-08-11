@@ -1,3 +1,30 @@
+# entropia
+
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 Entropia jest miarą niepewności lub nieprzewidywalności informacji. W teorii informacji, entropia jest używana do określenia ilości informacji, która jest zawarta w wiadomości. 
 
 **Im większa entropia, tym więcej informacji można przekazać.**

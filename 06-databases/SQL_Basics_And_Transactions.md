@@ -1,5 +1,30 @@
 # SQL i Transakcyjność
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Podstawy SQL
 - **SELECT**: Pobieranie danych z bazy (`SELECT kolumna FROM tabela WHERE warunek`)
 - **INSERT**: Dodawanie nowych wierszy (`INSERT INTO tabela (kolumny) VALUES (wartości)`)

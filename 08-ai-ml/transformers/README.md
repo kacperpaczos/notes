@@ -1,5 +1,30 @@
 # Architektura Transformer
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Czym jest Transformer?
 Transformer to model oparty na mechanizmie **self-attention**, wprowadzony w pracy ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) przez zespół Google w 2017 roku. Jest szeroko stosowany w NLP, ale także w innych dziedzinach (np. generowanie obrazów, wideo, muzyki).
 

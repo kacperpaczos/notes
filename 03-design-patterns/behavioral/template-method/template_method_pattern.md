@@ -1,5 +1,22 @@
 # Wzorzec Template Method
 
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Cel
 Definiuje szkielet algorytmu w metodzie, odkładając niektóre kroki na podklasy. Template Method pozwala podklasom redefiniować określone kroki algorytmu bez zmiany jego struktury.
 

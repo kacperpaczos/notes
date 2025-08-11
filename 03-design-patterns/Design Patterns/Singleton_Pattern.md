@@ -1,5 +1,26 @@
 # Wzorzec Singleton
 
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## Definicja
 Singleton to wzorzec kreacyjny, który zapewnia istnienie tylko jednej instancji danej klasy oraz dostarcza globalny punkt dostępu do tej instancji.
 

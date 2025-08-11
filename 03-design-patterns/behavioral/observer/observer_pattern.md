@@ -1,5 +1,30 @@
 # Wzorzec Observer
 
+## Cel
+
+## Problem
+
+## Pojęcia kluczowe
+
+## Struktura / Diagram (opcjonalnie)
+
+## Przepływ działania
+
+## Przykłady użycia
+
+## Implementacja (fragmenty kodu)
+
+## Zalety
+
+## Wady
+
+## Kiedy używać / kiedy nie
+
+## Powiązane tematy/wzorce
+
+## Źródła / dalsza lektura
+
+
 ## 📋 Cel
 Definiuje zależność jeden-do-wielu między obiektami, tak że gdy jeden obiekt (Subject) zmienia stan, wszystkie zależne od niego obiekty (Observers) są powiadamiane i automatycznie aktualizowane.
 
@@ -50,10 +75,10 @@ ConcreteObserver
 ## 📚 Przykłady użycia
 
 ### Frontend Development
-- **React** - useState, useEffect hooks
-- **Vue.js** - reactive data, watchers
-- **Angular** - Observables, EventEmitter
-- **DOM Events** - addEventListener, removeEventListener
+- **React** — stan i efekty (reaktywność; nie klasyczny Observer)
+- **Vue.js** — reactive data, watchers
+- **Angular** — RxJS Observable, EventEmitter
+- **DOM Events** — addEventListener/removeEventListener
 
 ### Backend Development
 - **Spring Events** (Java) - ApplicationEventPublisher
@@ -62,7 +87,7 @@ ConcreteObserver
 - **Python** - asyncio, callbacks
 
 ### Systemy
-- **MVC Pattern** - Model notyfikuje View o zmianach
+- **MVC Pattern** — Model powiadamia Widok o zmianach
 - **Systemy powiadomień** - email, SMS, push notifications
 - **Systemy monitorowania** - alerty, metryki
 - **Systemy subskrypcji** - newsletter, RSS feeds
@@ -78,11 +103,12 @@ ConcreteObserver
 
 ## ⚠️ Wady
 
-- **Nieoczekiwane aktualizacje** - trudne do przewidzenia kolejności aktualizacji
-- **Problemy z wydajnością** - przy dużej liczbie Observers
-- **Trudne debugowanie** - złożone przepływy powiadomień
-- **Memory leaks** - nieprawidłowe usuwanie Observers
-- **Cykl zależności** - Subject może być Observerem innego Subjecta
+- Nieokreślona kolejność powiadomień
+- Wydajność przy dużej liczbie obserwatorów
+- Trudne debugowanie kaskad powiadomień
+- Wycieki pamięci przy braku deregistracji
+- Problemy wielowątkowe (synchronizacja, scheduler)
+- Cykl zależności (Subject może obserwować inny Subject)
 
 ## 🔧 Implementacje w różnych językach
 
@@ -270,16 +296,17 @@ subject.notifyObservers("Ważna wiadomość!");
 ## 🔗 Warianty wzorca
 
 ### 1. **Push vs Pull Model**
-- **Push** - Subject wysyła dane do Observerów
-- **Pull** - Observerzy pobierają dane z Subjecta
+- **Push** — `Subject` przekazuje dane do `Observer.update(dane)`
+- **Pull** — `Observer.update(subject)` i sam pobiera stan przez `getState()`
 
 ### 2. **Event-Driven Observer**
 - Używa konkretnych typów zdarzeń
 - Observerzy reagują na określone zdarzenia
 
 ### 3. **Reactive Observer**
-- Asynchroniczne powiadomienia
-- Backpressure handling
+- Strumienie asynchroniczne (Reactive Streams)
+- Backpressure (np. RxJava/Reactor: onBackpressureBuffer/Drop/Latest)
+- Planowanie (Schedulers) i propagacja błędów
 
 ## 🔗 Powiązane wzorce
 
