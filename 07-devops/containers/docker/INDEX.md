@@ -33,6 +33,7 @@ Ten katalog jest częścią sekcji containers.
 - [Docker Entrypoint](Docker_Entrypoint.md) - Szczegółowe informacje o ENTRYPOINT w Docker
 - [Dockerfile & Images](Dockerfile_Images.md) - Tworzenie obrazów i Dockerfile
 - [Docker Containers](Docker_Containers.md) - Zarządzanie kontenerami
+- [Docker a systemd](Docker_Systemd.md) - Dlaczego kontenery zwykle nie używają systemd i kiedy warto
 - [Docker Compose](Docker_Compose.md) - Orkiestracja lokalna kontenerów
 - [Docker Volumes](Docker_Volumes.md) - Trwałość danych i zarządzanie storage
 - [Docker Registry](Docker_Registry.md) - Repozytoria obrazów
