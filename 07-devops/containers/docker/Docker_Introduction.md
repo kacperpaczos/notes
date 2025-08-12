@@ -83,3 +83,8 @@ Docker provides containerization platform for application packaging, distributio
 - **GPU-intensive workloads** - Hardware access limitations
 - **Legacy monolithic applications** - Refactoring complexity
 - **Desktop applications** - GUI integration challenges 
+
+## Uwaga: systemd w kontenerach
+
+- Kontenery Docker domyślnie nie uruchamiają `systemd`; działają zwykle z jednym procesem jako PID 1. Do poprawnej obsługi sygnałów i reaping warto dodać minimalny init (np. `tini`/`dumb-init`).
+- Gdy potrzebujesz pełnego `systemd` (np. testy ról Ansible), zobacz: [Docker a systemd](Docker_Systemd.md).
