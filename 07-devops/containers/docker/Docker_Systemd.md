@@ -39,6 +39,18 @@ docker run -d \
   jrei/systemd-debian:latest
 ```
 
+### Wymagane mounty i uprawnienia (systemd w kontenerze)
+
+- Pliki systemowe: `/proc` i `/sys` muszą być zamontowane; zalecane, aby `/sys` było read‑only.
+- Cgroups: zamontuj `cgroup2` (typowo pod `/sys/fs/cgroup`), często potrzeba trybu `--privileged`.
+- `/proc/sys` powinno być read‑only (wyjątki dla namespace’ów sieciowych); rozważ ograniczenia zgodnie z wytycznymi systemd.
+- `/dev`: osobny tmpfs z podstawowymi urządzeniami; zapewnij poprawne `tty` podłączone do `/dev/console`.
+- Integracja na hoście: przy głębszej integracji z cgroups rozważ `Delegate=yes` po stronie hosta (jednostki systemd delegujące zarządzanie poddrzewami cgroups dla menedżera kontenerów).
+
+Źródła (szczegóły):
+- [systemd: CONTAINER_INTERFACE – filesystem i sygnały](https://github.com/systemd/systemd/blob/main/docs/CONTAINER_INTERFACE.md#_snippet_0)
+- [systemd: CGROUP_DELEGATION – `Delegate=yes`](https://github.com/systemd/systemd/blob/main/docs/CGROUP_DELEGATION.md#_snippet_4)
+
 ## Rekomendacje
 
 - Trzymaj się zasady „jeden proces na kontener”.
@@ -48,5 +60,7 @@ docker run -d \
 ## Źródła / dalsza lektura
 
 - `[jrei/systemd-debian (Docker Hub)](https://hub.docker.com/r/jrei/systemd-debian)`
+- `[systemd: CONTAINER_INTERFACE.md](https://github.com/systemd/systemd/blob/main/docs/CONTAINER_INTERFACE.md)`
+- `[systemd: CGROUP_DELEGATION.md](https://github.com/systemd/systemd/blob/main/docs/CGROUP_DELEGATION.md)`
 
 

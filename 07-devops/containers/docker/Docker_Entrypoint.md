@@ -86,3 +86,26 @@ exec "$@"
 # Nadpisanie ENTRYPOINT
 docker run -it --entrypoint bash my-app:latest
 ``` 
+
+## PID 1 i minimalny init (`--init` / `init: true`)
+
+- Aby uniknąć problemów z obsługą sygnałów i reapingiem procesów potomnych przez PID 1, można:
+  - dodać minimalny init w obrazie (np. `tini`), lub
+  - włączyć init w czasie uruchomienia kontenera bez modyfikacji obrazu.
+
+### Włączenie init podczas uruchomienia
+
+```bash
+# docker run
+docker run --init -d --name app myapp:latest
+
+# Docker Compose (w pliku compose)
+services:
+  app:
+    image: myapp:latest
+    init: true
+```
+
+Źródła:
+- `[Docker Compose: init](https://github.com/docker/docs/blob/main/content/reference/compose-file/services.md#_snippet_45)`
+- `[Docker: multi-service containers i init](https://github.com/docker/docs/blob/main/content/manuals/engine/containers/multi-service_container.md#_qa_1)`
