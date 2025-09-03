@@ -37,4 +37,5 @@ Ten katalog zawiera materiały dotyczące różnych języków programowania.
 - [typescript/](typescript/)
 - [php/](php/)
 - [java/](java/)
+- [rust/](rust/)
 
