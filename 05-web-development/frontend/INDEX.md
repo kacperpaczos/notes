@@ -31,13 +31,14 @@ Ten katalog jest częścią sekcji 05-web-development.
 
 ### Podkatalogi
 
-- [react/](react/)
-- [vue/](vue/)
-- [javascript/](javascript/)
-- [tools/](tools/)
-- [responsive-design/](responsive-design/)
-- [css/](css/)
-- [accessibility/](accessibility/)
-- [html/](html/)
-- [other-frameworks/](other-frameworks/)
+- [react/](react/) - React i ekosystem
+- [react-native/](react-native/) - React Native - mobilny development
+- [vue/](vue/) - Vue.js framework
+- [javascript/](javascript/) - JavaScript i TypeScript
+- [tools/](tools/) - Narzędzia frontend
+- [responsive-design/](responsive-design/) - Responsywny design
+- [css/](css/) - CSS i style
+- [accessibility/](accessibility/) - Dostępność
+- [html/](html/) - HTML i semantyka
+- [other-frameworks/](other-frameworks/) - Inne frameworki
 
