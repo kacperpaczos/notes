@@ -44,6 +44,7 @@ Ten katalog jest częścią sekcji 04-languages.
 - [overloading.md](overloading.md)
 - [*value.md](*value.md)
 - [cpp_fundamentals.md](cpp_fundamentals.md)
+- [cpp_advanced_techniques.md](cpp_advanced_techniques.md)
 - [strings](strings)
 - [Top-DownApproach.md](Top-DownApproach.md)
 - [references.md](references.md)

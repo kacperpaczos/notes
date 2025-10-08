@@ -107,4 +107,164 @@
     - Zbiór metod, które klasa musi zaimplementować, ale nie zawiera ich definicji.
 
 16. **Asocjacja**
-    - Ogólna relacja między obiektami, która może być jedno- lub dwukierunkowa. 
+    - Ogólna relacja między obiektami, która może być jedno- lub dwukierunkowa.
+
+## Wzorce Projektowe Specyficzne dla Języków Programowania
+
+### Python
+
+#### Strategy Pattern
+- **Definicja**: Hermetyzacja algorytmów w osobnych klasach z wspólnym interfejsem
+- **Zastosowanie**: Gdy masz wiele algorytmów rozwiązujących ten sam problem
+- **Przykład**:
+```python
+from abc import ABC, abstractmethod
+
+class PaymentStrategy(ABC):
+    @abstractmethod
+    def pay(self, amount: float) -> None: ...
+
+class CreditCardPayment(PaymentStrategy):
+    def pay(self, amount: float) -> None:
+        print(f"Płacę {amount} kartą kredytową")
+
+class PayPalPayment(PaymentStrategy):
+    def pay(self, amount: float) -> None:
+        print(f"Płacę {amount} przez PayPal")
+
+class PaymentProcessor:
+    def __init__(self, strategy: PaymentStrategy):
+        self.strategy = strategy
+
+    def process_payment(self, amount: float):
+        self.strategy.pay(amount)
+```
+
+#### Template Method Pattern
+- **Definicja**: Szkielet algorytmu w klasie bazowej z możliwością podmiany kroków
+- **Zastosowanie**: Procesy z niezmiennymi i zmiennymi krokami
+- **Przykład**:
+```python
+from abc import ABC, abstractmethod
+
+class DataProcessor(ABC):
+    def process(self, data):
+        self.validate(data)
+        cleaned_data = self.clean(data)
+        result = self.transform(cleaned_data)
+        self.save(result)
+
+    @abstractmethod
+    def validate(self, data): ...
+
+    @abstractmethod
+    def clean(self, data): ...
+
+    @abstractmethod
+    def transform(self, data): ...
+
+    def save(self, data):  # krok domyślny
+        print(f"Zapisywanie: {data}")
+
+class JSONProcessor(DataProcessor):
+    def validate(self, data):
+        if not isinstance(data, dict):
+            raise ValueError("Nieprawidłowe dane JSON")
+
+    def clean(self, data):
+        return {k: v for k, v in data.items() if v is not None}
+
+    def transform(self, data):
+        import json
+        return json.dumps(data)
+```
+
+#### Guard Clause Pattern
+- **Definicja**: Wczesne zwracanie w przypadku błędnych warunków
+- **Zaleta**: Eliminacja zagnieżdżonych warunków, czytelniejszy kod
+
+### Java
+
+#### Builder Pattern
+- **Definicja**: Budowanie złożonych obiektów krok po kroku
+- **Zastosowanie**: Gdy konstruktor ma zbyt wiele parametrów opcjonalnych
+- **Przykład**:
+```java
+public class Computer {
+    private String cpu;
+    private String ram;
+    private String storage;
+
+    private Computer(Builder builder) {
+        this.cpu = builder.cpu;
+        this.ram = builder.ram;
+        this.storage = builder.storage;
+    }
+
+    public static class Builder {
+        private String cpu;
+        private String ram;
+        private String storage;
+
+        public Builder cpu(String cpu) {
+            this.cpu = cpu;
+            return this;
+        }
+
+        public Builder ram(String ram) {
+            this.ram = ram;
+            return this;
+        }
+
+        public Computer build() {
+            return new Computer(this);
+        }
+    }
+}
+
+// Użycie
+Computer gamingPC = new Computer.Builder()
+    .cpu("Intel i7")
+    .ram("32GB")
+    .storage("1TB SSD")
+    .build();
+```
+
+#### Factory Method Pattern
+- **Definicja**: Tworzenie obiektów bez specyfikowania konkretnych klas
+- **Zastosowanie**: Gdy podklasy decydują o typie tworzonego obiektu
+
+### C++
+
+#### RAII Pattern
+- **Definicja**: Zasoby zarządzane przez czas życia obiektów
+- **Zastosowanie**: Automatyczne zwalnianie zasobów
+- **Przykład**:
+```cpp
+class MutexLock {
+    std::mutex& mutex;
+
+public:
+    explicit MutexLock(std::mutex& m) : mutex(m) {
+        mutex.lock();
+    }
+
+    ~MutexLock() {
+        mutex.unlock();
+    }
+};
+
+std::mutex globalMutex;
+void threadSafeFunction() {
+    MutexLock lock(globalMutex);  // automatyczne lock/unlock
+    // kod chroniony
+}
+```
+
+#### Namespace Pattern
+- **Definicja**: Grupowanie funkcjonalności w przestrzenie nazw
+- **Zastosowanie**: Unikanie konfliktów nazw, organizacja kodu
+
+#### Iterator Pattern
+- **Definicja**: Dostęp do elementów kolekcji bez eksponowania struktury
+- **Zastosowanie**: Jednolity interfejs dla różnych typów kolekcji 

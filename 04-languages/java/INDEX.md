@@ -30,6 +30,7 @@ Notatki dotyczące języka programowania Java.
 ## Podstawy składni
 
 - [Różnica między extends a implements](extends-vs-implements.md) - Wyjaśnienie różnic między dziedziczeniem klas a implementacją interfejsów
+- [Zaawansowane techniki Java](./java_advanced_techniques.md) - Kompendium zaawansowanych technik programowania w Java
 
 ## Do rozwinięcia
 
