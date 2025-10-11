@@ -32,6 +32,6 @@ Ten katalog zawiera materiały dotyczące podstawowych koncepcji informatyki, ta
 ### Podkatalogi
 
 - [data-structures/](data-structures/)
-- [computational-theory/](computational-theory/)
+- [computational-theory/](computational-theory/) - zawiera systemy pozycyjne, algorytmy konwersji i faktoryzację
 - [algorithms/](algorithms/)
 

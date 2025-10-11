@@ -29,6 +29,10 @@ Ten katalog jest częścią sekcji 01-cs-fundamentals.
 
 ## Zawartość katalogu
 
+### Pliki
+
+- [positional-systems.md](positional-systems.md) - Systemy pozycyjne, struktury potęgowe, algorytmy konwersji i faktoryzacja (rozszerzona teoria)
+
 ### Podkatalogi
 
 - [automata/](automata/)
