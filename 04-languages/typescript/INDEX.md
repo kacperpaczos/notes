@@ -1,44 +1,64 @@
-# typescript
+# TypeScript
 
-## Cel
+## Overview
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It adds optional type annotations, interfaces, generics, and other features to help build large-scale applications.
 
-## Problem
+## Learning Path Structure
 
-## Pojęcia kluczowe
+### Level 1: Fundamentals
+- [Getting Started](./basics/01-getting-started.md)
+- [Basic Types](./basics/02-basic-types.md)
+- [Variables and Constants](./basics/03-variables-constants.md)
+- [Functions](./basics/04-functions.md)
+- [Arrays and Tuples](./basics/05-arrays-tuples.md)
 
-## Struktura / Diagram (opcjonalnie)
+### Level 2: Objects, Interfaces, Classes
+- [Objects](./basics/06-objects.md)
+- [Interfaces](./types/interfaces.md)
+- [Type Aliases](./types/type-aliases.md)
+- [Classes](./basics/07-classes.md)
+- [Enums](./types/enums.md)
 
-## Przepływ działania
+### Level 3: Advanced Type System
+- [Union and Intersection Types](./types/union-intersection.md)
+- [Generics](./generics/index.md)
+- [Conditional Types](./advanced/conditional-types.md)
+- [Mapped Types](./advanced/mapped-types.md)
+- [Utility Types](./types/utility-types.md)
 
-## Przykłady użycia
+### Level 4: Advanced Patterns
+- [Modules](./advanced/modules.md)
+- [Type Declarations](./advanced/type-declarations.md)
+- [Async/Await](./advanced/async-patterns.md)
+- [Type Narrowing](./advanced/type-narrowing.md)
 
-## Implementacja (fragmenty kodu)
+### Level 5: Expert TypeScript
+- [Advanced Generics](./generics/advanced.md)
+- [Template Literal Types](./advanced/template-literal-types.md)
+- [Decorators](./decorators/index.md)
+- [Meta-Programming](./advanced/meta-programming.md)
 
-## Zalety
+### Level 6: Frameworks Integration
+- [TypeScript + React](./advanced/react-integration.md)
+- [TypeScript + Node.js](./advanced/node-integration.md)
 
-## Wady
+## Key Concepts
+- Type System
+- Type Inference
+- Generics
+- Decorators
+- Type Guards
+- Utility Types
 
-## Kiedy używać / kiedy nie
+## Resources
+- [Official Documentation](https://www.typescriptlang.org/docs)
+- [TypeScript Playground](https://www.typescriptlang.org/play)
+- "Effective TypeScript" by Dan Vanderkam
 
-## Powiązane tematy/wzorce
-
-## Źródła / dalsza lektura
-
-
-Ten katalog jest częścią sekcji 04-languages.
-
-## Zawartość katalogu
-
-### Podkatalogi
-
-- [decorators/](decorators/)
-- [basics/](basics/)
-- [generics/](generics/)
-- [types/](types/)
-- [advanced/](advanced/)
-
-### Pliki
-
-- [generyki](generyki)
-- [typescript_fundamentals.md](typescript_fundamentals.md)
+## Related Topics
+- JavaScript
+- React
+- Node.js
+- Design Patterns
+- Type Systems
 
