@@ -29,3 +29,6 @@ Ten katalog jest częścią sekcji python.
 
 ## Zawartość katalogu
 
+### Biblioteki zewnętrzne
+- [**attrs**](./attrs.md) - Automatyczne generowanie metod specjalnych w klasach, eliminacja boilerplate code
+
