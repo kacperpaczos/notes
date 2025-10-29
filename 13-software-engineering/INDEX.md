@@ -34,6 +34,15 @@
   - Poziomy testowania i piramida testów
   - TDD, BDD i Continuous Testing
 
+### 📋 Code Quality & Best Practices
+- [**Engineering Guidelines**](./engineering-guidelines.md) - Zasady i najlepsze praktyki programowania
+  - Linting i formatowanie (Python, C/C++)
+  - Obsługa wyjątków i błędów
+  - Typowanie i walidacja danych
+  - Interfejsy i dziedziczenie
+  - Zgodność API i testy
+  - Zasada DRY i prostoty
+
 ---
 
 ## 🎯 Planowane Sekcje
@@ -41,7 +50,8 @@
 ### 📋 Software Engineering Practices
 - [ ] **Requirements Engineering** - Zbieranie i analiza wymagań
 - [ ] **Software Architecture** - Patterns, principles, design decisions
-- [ ] **Code Quality** - Static analysis, code reviews, technical debt
+- [x] **Code Quality** - Static analysis, code reviews, technical debt
+  - [**Engineering Guidelines**](./engineering-guidelines.md) - Zasady i najlepsze praktyki dla Pythona i C/C++
 - [ ] **Version Control** - Git workflows, branching strategies
 - [ ] **Documentation** - API docs, architecture decision records
 
@@ -104,6 +114,7 @@
 | Sekcja | Status | Priorytet |
 |--------|---------|-----------|
 | Testing | ✅ Kompletne | Wysokie |
+| Engineering Guidelines | ✅ Kompletne | Wysokie |
 | Requirements Engineering | ⏳ Planowane | Średnie |
 | Quality Assurance | ⏳ Planowane | Wysokie |
 | SDLC Models | ⏳ Planowane | Średnie |
