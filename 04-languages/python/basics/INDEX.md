@@ -29,3 +29,5 @@ Ten katalog jest częścią sekcji python.
 
 ## Zawartość katalogu
 
+- [typing.md](./typing.md) - Podstawy typowania w Pythonie
+
