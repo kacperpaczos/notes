@@ -155,6 +155,43 @@ zamowienie = {"id": 7, "klient_id": klient["id"]}
 hash(klucz) % m
 ```
 
+### 2.13 Tablica (array)
+- **Definicja:** Kontyguacyjna sekwencja elementów tego samego typu, indeksowana liczbami całkowitymi `A[0..n-1]`.
+- **Cechy:** Dostęp losowy `O(1)`, stały rozmiar (statyczna) lub dynamiczny, efektywna pamięć.
+- **Skojarzenia matematyczne:** Wektor `v ∈ Vⁿ`, funkcja `f: ℕ → T`, ciąg `(a₀, a₁, …, aₙ₋₁)`.
+- **Złożoność:** Odczyt `O(1)`, wstawienie `O(n)` (przesunięcia), usunięcie `O(n)`.
+- **Python:**
+```python
+# W Pythonie list jest dynamiczną tablicą
+tablica = [1, 2, 3, 4, 5]
+tablica[2] = 10  # O(1) dostęp
+tablica.insert(1, 99)  # O(n) wstawienie
+```
+
+### 2.14 Zmienna (variable)
+- **Definicja:** Nazwane miejsce w pamięci przechowujące wartość, które może być modyfikowane.
+- **Cechy:** Ma typ (statyczny/dynamiczny), zakres (scope), czas życia (lifetime).
+- **Skojarzenia matematyczne:** Funkcja przypisania `x := v`, zmienne w rachunku lambda `λx.`, wiązanie wartości.
+- **Python:**
+```python
+x = 42          # zmienna całkowita
+y = "tekst"     # zmienna string
+z = [1, 2, 3]   # zmienna lista (referencja)
+```
+
+### 2.15 String (ciąg znaków)
+- **Definicja:** Sekwencja znaków `s = c₀c₁…cₙ₋₁`, gdzie `cᵢ ∈ Σ` (alfabet).
+- **Cechy:** Niemutowalny w Pythonie (tworzy nowe obiekty), może być indeksowany, wspiera konkatenację.
+- **Skojarzenia matematyczne:** Słowo nad alfabetem `Σ*`, język formalny, automaty skończone, wyrażenia regularne.
+- **Złożoność:** Długość `|s| = n`, konkatenacja `O(n+m)`, wyszukiwanie wzorca `O(n·m)` (naiwne) lub `O(n+m)` (KMP).
+- **Python:**
+```python
+s = "Hello"
+print(s[0])     # O(1) dostęp - 'H'
+s + " World"    # O(n+m) konkatenacja (tworzy nowy string)
+len(s)          # O(1) długość
+```
+
 ---
 
 ## 3. Ogólne pojęcia struktur danych
@@ -255,7 +292,9 @@ class Rekordy:
 ### 4.2 Złożoność operacji w wybranych strukturach
 | Struktura         | Wstaw | Odczyt | Usunięcie | Uwagi                                     |
 |-------------------|-------|--------|-----------|-------------------------------------------|
+| Tablica (array)   | `O(n)` | `O(1)` | `O(n)`     | Przesunięcia przy środku                 |
 | Tablica dynamiczna| `Amort. O(1)` | `O(1)`    | `O(n)`     | Przesunięcia przy środku                 |
+| String            | `O(n+m)` | `O(1)` | `O(n)`     | Konkatenacja tworzy nowy string          |
 | Lista jednokier.  | `O(1)` (na początku) | `O(n)` | `O(1)` (na początku) | Brak szybkiego dostępu losowego |
 | Hash table        | `O(1)`* | `O(1)`* | `O(1)`* | `*` – średnio, `O(n)` w najgorszym        |
 | Drzewo BST        | `O(log n)`* | `O(log n)`* | `O(log n)`* | `*` – przy balansie, inaczej `O(n)`   |
@@ -264,8 +303,10 @@ class Rekordy:
 ### 4.3 Właściwości struktur
 | Struktura | Mutowalność | Zachowany porządek | Dostęp losowy | Typowe zastosowania            |
 |-----------|-------------|--------------------|---------------|--------------------------------|
+| `array`   | Tak         | Tak                | O(1)          | Sekwencje elementów, buforowanie |
 | `tuple`   | Nie         | Tak (stała kolejność) | O(1)        | Rekordy stałe, klucze złożone   |
 | `list`    | Tak         | Tak                | O(1) indeks   | Bufory, kolejki, zbiory dynamiczne |
+| `str`     | Nie         | Tak                | O(1)          | Teksty, dane tekstowe           |
 | `dict`    | Tak         | Iteracja od Py3.7  | Brak          | Mapy klucz → wartość            |
 | `set`     | Tak         | Brak               | Brak          | Zbiory unikalnych elementów     |
 
@@ -362,6 +403,59 @@ krotka = (1, 2, 3)
 nowa = krotka + (4,)     # tworzy nową krotkę
 ```
 
+### 6.6 Tablica - operacje podstawowe
+```python
+# Tworzenie i dostęp
+tablica = [10, 20, 30, 40, 50]
+print(tablica[2])        # O(1) - odczyt: 30
+tablica[2] = 35          # O(1) - modyfikacja
+
+# Wstawienie (kosztowne)
+tablica.insert(1, 15)    # O(n) - przesuwa elementy
+# [10, 15, 20, 30, 40, 50]
+
+# Usunięcie
+tablica.pop(2)           # O(n) - przesuwa elementy
+del tablica[0]           # O(n)
+```
+
+### 6.7 Zmienne - zakres i wiązanie
+```python
+# Zmienne globalne i lokalne
+x = 42  # globalna
+
+def funkcja():
+    y = 10      # lokalna
+    global x
+    x = 100     # modyfikacja globalnej
+
+# Wiązanie referencji
+a = [1, 2, 3]
+b = a           # b wskazuje na ten sam obiekt
+b.append(4)     # modyfikuje również a
+print(a)        # [1, 2, 3, 4]
+```
+
+### 6.8 String - operacje i właściwości
+```python
+# Tworzenie i dostęp
+s = "Hello"
+print(s[0])              # O(1) - 'H'
+print(s[-1])             # O(1) - 'o'
+
+# Konkatenacja (tworzy nowy string)
+s2 = s + " World"        # O(n+m) - "Hello World"
+s3 = "".join([s, " World"])  # efektywniejsze dla wielu stringów
+
+# Wyszukiwanie
+"lo" in s                # O(n) - True
+s.find("ll")             # O(n) - 2 (indeks)
+
+# Metody niemutujące
+s.upper()                # "HELLO" (nowy string)
+s.replace("l", "L")      # "HeLLo" (nowy string)
+```
+
 ---
 
 ## 7. Notacja matematyczna w praktyce
@@ -391,6 +485,7 @@ nowa = krotka + (4,)     # tworzy nową krotkę
 
 ## 8. Słownik terminów (alfabetycznie)
 - **ADT:** Abstrakcyjny typ danych; opis operacji i kontraktów bez implementacji.
+- **Array (tablica):** Kontyguacyjna sekwencja elementów tego samego typu, indeksowana liczbami całkowitymi.
 - **Composite record (rekord złożony):** Rekord z kluczem wielopolowym.
 - **CRUD:** Create, Read, Update, Delete – cztery podstawowe operacje na danych.
 - **Field (pole):** Najmniejszy składnik rekordu o określonym typie.
@@ -404,13 +499,15 @@ nowa = krotka + (4,)     # tworzy nową krotkę
 - **Order (porządek):** Reguła określająca relacje `<`, `>` między elementami.
 - **Payload:** Dane towarzyszące kluczowi, nienależące do identyfikatora.
 - **Primary key:** Minimalny zbiór pól zapewniający unikalność rekordu.
-- **Queue (kolejka FIFO):** Struktura o polityce „pierwszy na wejściu – pierwszy na wyjściu”.
+- **Queue (kolejka FIFO):** Struktura o polityce „pierwszy na wejściu – pierwszy na wyjściu".
 - **Record (rekord):** Zbiór powiązanych pól reprezentujących encję.
 - **Satellite data:** Dane przechowywane z kluczem, ale niewykorzystywane do wyszukiwania.
-- **Stack (stos LIFO):** Struktura o polityce „ostatni na wejściu – pierwszy na wyjściu”.
+- **Stack (stos LIFO):** Struktura o polityce „ostatni na wejściu – pierwszy na wyjściu".
 - **Stability:** Własność algorytmu zachowująca kolejność elementów równych.
+- **String (ciąg znaków):** Sekwencja znaków z alfabetu, reprezentująca tekst.
 - **Traversal:** Strategia odwiedzania elementów struktury.
 - **Tuple (krotka):** Niezmienna sekwencja wartości.
+- **Variable (zmienna):** Nazwane miejsce w pamięci przechowujące wartość, które może być modyfikowane.
 - **Złożoność czasowa:** Funkcja opisująca koszt operacji względem rozmiaru danych.
 - **Złożoność przestrzenna:** Funkcja opisująca zużycie pamięci względem rozmiaru danych.
 
