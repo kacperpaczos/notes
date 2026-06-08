@@ -243,3 +243,7 @@ Pydantic **waliduje typy w runtime**, w przeciwieństwie do zwykłych adnotacji.
 
 - [typing-module](../advanced/typing-module.md) - zaawansowane użycie modułu typing
 
+
+
+
+
